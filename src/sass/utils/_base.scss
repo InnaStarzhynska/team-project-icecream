@@ -1,0 +1,71 @@
+body {
+        background-image: url(../images/body/backgroud_mobile@1x.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/body/backgroud_mobile@2x.jpg)
+            }
+        
+            @media screen and (min-width: 481px) {
+                background-image: url(../images/body/background_tablet@1x.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/body/background_tablet@2x.jpg);
+                }
+            }
+        
+            @media screen and (min-width: 769px) {
+        
+                background-image: url(../images/body/backgroud_desktop@1x.jpg);
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/body/backgroud_desktop@2x.jpg);
+                }
+            }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+    margin: 0;
+};
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+};
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+        
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        width: 1200px;
+    }
+};
