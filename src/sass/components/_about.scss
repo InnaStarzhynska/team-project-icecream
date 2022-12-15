@@ -1,0 +1,152 @@
+.about{
+    padding-top:60px;
+    padding-bottom: 60px;
+
+
+    background-color: $mainBgColor;
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+.main-text-one{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(37/30);
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #FCFCFC;
+
+    margin-bottom: 12px;
+}
+
+.main-text{
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: calc(45/36);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FCFCFC;
+
+    padding-bottom: 82px;
+    
+}
+
+.block{
+
+    display: flex;
+}
+
+
+
+.image{
+
+
+    width: 490px;
+  
+}
+
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 0;
+
+
+    gap:8px;
+    margin-left: 109px;
+    margin-top: 58px;
+    margin-right: 85px;
+    margin-bottom: 0;
+}
+
+.text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 176%;
+/* or 28px */
+
+letter-spacing: 0.04em;
+
+color: #FCFCFC;
+}
+
+.text-one{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 194%;
+/* or 27px */
+
+letter-spacing: 0.04em;
+
+color: #FCFCFC;
+}
+
+.button{
+  
+    margin-left: 109px;
+    margin-top: 54px;
+
+    width: 164px;
+    height: 42px;
+    background-color: #F8D24E;
+    color: #000000;
+    border: none;
+border-radius: 10px;
+
+cursor: pointer;
+
+}
+.button:hover{
+    background-color: #0A8817;
+}
+.button:focus{
+    background-color:
+    #0A8817;
+    color: #FCFCFC;
+    fill:#FCFCFC ;
+   
+}
+.button:disabled{
+    background-color: #ABABAB;
+}
+
+.button-text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 129%;
+
+margin-right: 7px;
+
+
+
+
+
+}
+.button-flex{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+}
+
