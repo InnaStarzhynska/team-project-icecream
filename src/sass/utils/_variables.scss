@@ -1,0 +1,33 @@
+// Fonts
+$mainFont: montserrat, sans-serif;
+$titleFont: Seymour One, sans-serif;
+
+// Text colors
+$lightTextColor: #FCFCFC;
+$darkTextColor: #131313;
+$buttonTextColor: #000000;
+$timeTextColor: #907E82;
+$accentTextColor: #F8D24E;
+
+// Background colors
+$mainBgColor: #84A178;
+$secondaryBgColor: #FCFCFC;
+
+$mobileMenuBgColor: #85A279;
+$tabletMenuBgColor:#97AF8D;
+
+$iceCreamBgColor: #AEC6A5;
+$iceCofeeBBgColor: #EFD478;
+$milkshakesBgColor: #D6936D;
+
+$formInputBgColor: rgba(248, 210, 78, 0.1);
+
+// Button BgColors
+$defaultBtnBgColor: #F8D24E;
+$hoverFocusBtnBgColor: #0A8817;
+$disabledBtnBgColor:#ABABAB;
+
+
+// transition-duration and timing-function
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
