@@ -5,10 +5,6 @@
 
     background-color: $mainBgColor;
 
-ul[class],
-ol[class] {
-  list-style: none;
-}
 .main-text-one{
     font-family: 'Montserrat';
     font-weight: 800;
@@ -52,11 +48,18 @@ ol[class] {
 
 
     width: 490px;
+
+
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+   
   
 }
+.image:box-shadow {
+    position: absolute;
 
 
-
+}
 .list{
     display: flex;
     flex-direction: column;
