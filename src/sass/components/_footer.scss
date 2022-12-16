@@ -1,11 +1,16 @@
-.footer-block {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footer-section {
     background-color: $mainBgColor;
+    padding-bottom: 20px;
+    
 
     @media screen and (min-width: 768px) {
         padding-top: 12px;
         padding-bottom: 12px;
+    }
+}
+.footer-name {
+     @media screen and (min-width: 1200px) {
+       margin-bottom: 60px;
     }
 }
 .footer-container-wrapper {
@@ -72,10 +77,13 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 60px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-top: 20px;
+    }
+
 }
 .footer-socials-list {
     display: flex;
-    list-style: none;
     gap: 20px;
     justify-content: end;
 }
@@ -96,10 +104,10 @@
     fill: $mainBgColor;
     
     &:hover {
-        fill: #FCFCFC;
+        fill: $secondaryBgColor;
     }
     &:focus {
-        fill: #FCFCFC;
+        fill: $secondaryBgColor;
     }
 }
 .footer-tel {
