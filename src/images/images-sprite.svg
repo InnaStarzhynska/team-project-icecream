@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-more" viewBox="0 0 22 32">
+    <symbol id="icon-button-arrow" viewBox="0 0 16 32">
+      <path d="M.612.704C.22 1.155 0 1.767 0 2.405s.22 1.25.612 1.701l10.344 11.908L.612 27.922c-.381.454-.591 1.061-.587 1.692s.225 1.234.612 1.68c.387.446.912.699 1.46.704s1.076-.237 1.47-.675l11.821-13.609c.392-.451.612-1.063.612-1.701s-.22-1.25-.612-1.701L3.567.703C3.175.252 2.644-.001 2.09-.001S1.004.252.613.703z"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 22 32">
       <path d="M3.103.726a2.4 2.4 0 0 0 0 3.394L14.983 16 3.103 27.88a2.398 2.398 0 0 0 1.705 4.067 2.393 2.393 0 0 0 1.688-.674l13.577-13.577a2.4 2.4 0 0 0 0-3.394L6.496.725a2.4 2.4 0 0 0-3.394 0z"/>
     </symbol>
     <symbol id="icon-facebook" viewBox="0 0 16 32">
