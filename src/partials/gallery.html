@@ -1,0 +1,34 @@
+<section>
+    <h2>Gallery</h2>
+    <picture>
+        <!-- desktop -->
+        <source media="(min-width: 1200px)" srcset="
+                        ./images/gallery/gallery-first-1x-l.webp 1x,
+                        ./images/gallery/gallery-first-2x-l.webp 2x
+                      " type="image/webp" />
+        <source media="(min-width: 1200px)" srcset="
+                        ./images/gallery/gallery-first-1x-l.jpg 1x,
+                        ./images/gallery/gallery-first-2x-l.jpg 2x
+                      " />
+        <!-- tablet -->
+        <source media="(min-width: 768px)" srcset="
+                        ./images/gallery/gallery-first-1x-m.webp 1x,
+                        ./images/gallery/gallery-first-2x-m.webp 2x
+                      " type="image/webp" />
+        <source media="(min-width: 768px)" srcset="
+                        ./images/gallery/gallery-first-1x-m.jpg 1x,
+                        ./images/gallery/gallery-first-2x-m.jpg 2x
+                      " />
+        <!-- mobile -->
+        <source media="(max-width: 767px)" srcset="
+                        ./images/gallery/gallery-first-1x-s.webp 1x,
+                        ./images/gallery/gallery-first-2x-s.webp 2x
+                      " type="image/webp" />
+        <source media="(max-width: 767px)" srcset="
+                        ./images/gallery/gallery-first-1x-s.jpg 1x,
+                        ./images/gallery/gallery-first-2x-s.jpg 2x
+                      " />
+        <!-- default -->
+        <img  src="./images/gallery/gallery-first-1x-s.jpg" width="280" height="130" loading="lazy" />
+    </picture>
+</section>
