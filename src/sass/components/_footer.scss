@@ -1,5 +1,4 @@
 .footer-block {
-    // width: 320px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: $mainBgColor;
@@ -113,16 +112,13 @@
     line-height: calc(22 / 12);
     text-align: right;
     margin-top: 20px;
-    // padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: calc(26 / 14);
-        // padding-bottom: 60px;
         margin-top: 34px;
     }
     @media screen and (min-width: 1200px) {
-        // width: 700px;
         font-size: 16px;
         line-height: calc(30 / 16);
         margin-top: 40px;
