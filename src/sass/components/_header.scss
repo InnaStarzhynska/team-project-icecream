@@ -1,0 +1,108 @@
+.header{
+    background-color: $mainBgColor;
+}
+
+.header .container{
+    display: flex;
+    @media screen and (max-width: 480px) {
+        padding-top: 12px;
+        padding-bottom: 50px;
+    }
+}
+
+.logo{
+    width:40px;
+    height:37px;
+}
+
+.site-nav{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.site-nav-list{
+    display: flex;
+}
+
+.site-nav-list-item{
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $lightTextColor;
+    &:not(:last-child){
+        margin-right: 28px;
+    }
+}
+
+.header-button{
+    @extend %button;
+    padding: 12px 36px;
+    background-color: $defaultBtnBgColor;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+//Стили Мобильного меню
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    padding: 100px 32px 64px;
+    background-color: $mobileMenuBgColor;
+    transform: translateX(150%);
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu-button,
+.mobile-menu-close{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    background-color: $mainBgColor;
+    fill: #ffffff;
+    border: none;
+    padding: 0;
+    height: 41px;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.mobile-menu-site-nav{
+    margin-bottom: 34vh;
+}
+
+.mobile-menu-item{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    color: $lightTextColor;  
+    text-align: center;
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-header-button{
+    @extend %button;
+    padding: 12px 36px;
+    max-width: 152px;
+    display: block;    
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $defaultBtnBgColor;
+}
