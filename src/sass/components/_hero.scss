@@ -34,7 +34,7 @@
         margin-bottom: 28px;
     }
 }
-.hero list {
+.hero-list {
     
     list-style: none;
     text-decoration: none;
@@ -186,6 +186,7 @@
 
 }
 .hero-text {
+    position: relative;
     display: flex;
     max-width: 139px;
     color: #FCFCFC;
@@ -205,4 +206,13 @@
         max-width: 200px;
 
     } 
+}
+
+.hero-icon {
+    position: absolute;
+    fill: floralwhite;
+    top:30%;
+    left: 0px;
+    // bottom: -1px;
+    // left: 0;
 }
