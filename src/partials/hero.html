@@ -1,33 +1,53 @@
 <section class="hero">
-    <div class="hero-container container">
-     <div class="hero-name">
-    <h1 class="hero-title">ice cream
-        made with
-        passion</h1>
-<ul class="hero-list">
-    <li class="hero-item">16</li>
-    <p class="hero-item-text">cafes</p>
-    <li class="hero-item">23</li>
-    <p class="hero-item-text">food trucks</p>
-</ul>
-</div>
-<div class="hero-products">
-    <button class="hero-btn">Products</button>
-    <a class="hero-link" href="How it’s made?">How it’s made?</a>
-</div>
-    <div class="hero-picture">
-        <picture>
-            <source media="(min-width:768px; )" srcset="./images/hero/plate1lg-min.png 1x, ./images/hero/plate1@2xlg-min.png 2x" />
-        
-        <img class="hero-img" srcset="./images/hero/plate1sm-min.png" alt="plate ice-cream" />
-    </picture>
-    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
-     <!-- <svg class="" width="40" height="16">
-        <use href="../images-sprite.svg#icon-white-arrow"></use>
-     </svg> -->
-
- 
-  </div>
-    </div>
+    <div class="container hero-container">
+      <div class="hero-flex-box">
+        <div class="hero-main-block">
+          <h1 class="hero-title">
+            ice cream made with passion
+          </h1>
+          <ul class="hero-link-list">
+            <li><button class="hero-btn">Products</button></a></li>
+            <li><a class="hero-link">How it’s made?</a></li>
+          </ul>
+        </div>
+        <ul class="hero-benefits">
+          <li class="hero-benefits-item">
+            <p class="hero-benefits-numbers">16</p>
+            <p class="hero-benefits-name">cafes</p>
+          </li>
+          <li class="hero-benefits-item">
+            <p class="hero-benefits-numbers">23</p>
+            <p class="hero-benefits-name">food trucks</p>
+          </li>
+        </ul>
+      </div>
   
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+  
+        <svg class="hero-text-arrow" width="40" height="16">
+          <use href="./images/images-sprite.svg#icon-white-arrow"></use>
+        </svg>
+      </p>
+      <picture>
+        <source media="(min-width=768px)" srcset="./images/hero/plate1sm-min.png 1x, ./images/hero/plate1@2xsm-min.png 2x">
+        <source media="(min-width=1200)" srcset="./images/hero/plate1lg-min.png 1x, ./images/hero/plate1@2xlg-min.png 2x">
+        <img class="hero-plate" src="./images/hero/plate1lg-min.png" alt="ice-cream plate">
+      </picture>
+      <picture>
+        <source srcset="./images/hero/smile-ice-cream/tablet/tablet@1x.png  152w">
+            <source srcset="./images/hero/smile-ice-cream/desktop/desktop@1x.png 225w">
+            <source srcset="./images/hero/smile-ice-cream/tablet/tablet@2x.png   304w">
+            <source srcset="./images/hero/smile-ice-cream/desktop/desktop@2x.png 450w">
+       
+          <img sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+          class="hero-lot-ice"
+          src="./images/hero/smile-ice-cream/tablet/tablet@1x.png"
+          alt="ice-cream cup"
+        />
+      </picture>
+      
+         
+    </div>
   </section>
