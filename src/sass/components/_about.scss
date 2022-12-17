@@ -1,0 +1,257 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-color: $mainBgColor;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .main-text-one {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $secondaryBgColor;
+
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: calc(27 / 22);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
+    }
+  }
+
+  .main-text {
+    font-family: $titleFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $secondaryBgColor;
+
+    padding-bottom: 54px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 80px;
+      font-size: 34px;
+      line-height: calc(43 / 34);
+      /* identical to box height */
+
+      letter-spacing: 0.06em;
+
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 121px;
+      font-size: 36px;
+      line-height: calc(45 / 36);
+    }
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
+  .image {
+    width: 279px;
+    height: 279px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px -22px #ebd686;
+    border-radius: 250px;
+
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 330px;
+      box-shadow: 0px -26px #ebd686;
+      margin-top: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      height: auto;
+      box-shadow: 0px -39px #ebd686;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 0;
+
+    gap: 4px;
+
+    margin-top: 40px;
+    margin: 40px 50px 0 50px;
+
+    @media screen and (min-width: 768px) {
+      gap: 8px;
+
+      margin: 0px 2px 0 38px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 109px;
+      margin-top: 58px;
+      margin-right: 85px;
+      margin-bottom: 0;
+    }
+  }
+
+  .text {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $secondaryBgColor;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 176%;
+    }
+  }
+
+  .text-one {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+
+    text-align: center;
+
+    color: $secondaryBgColor;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 176%;
+      letter-spacing: 0.04em;
+      text-align: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 194%;
+    }
+  }
+
+  .text-two {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      font-family: $mainFont;
+      font-size: 12px;
+      line-height: 194%;
+      letter-spacing: 0.04em;
+      text-align: start;
+      font-style: normal;
+      font-weight: 400;
+
+      color: $secondaryBgColor;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 194%;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-top: 10px;
+
+    width: 164px;
+    height: 42px;
+    background-color: $defaultBtnBgColor;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 36px;
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 109px;
+      margin-top: 54px;
+    }
+  }
+  .button:hover {
+    background-color: $hoverFocusBtnBgColor;
+    color: $buttonTextColor;
+  }
+  .button:focus {
+    background-color: $hoverFocusBtnBgColor;
+    color: $secondaryBgColor;
+    fill: $secondaryBgColor;
+  }
+  .button:disabled {
+    background-color: $disabledBtnBgColor;
+  }
+
+  .button-text {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+
+    margin-right: 7px;
+  }
+}
