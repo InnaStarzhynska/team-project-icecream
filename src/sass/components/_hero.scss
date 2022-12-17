@@ -2,24 +2,24 @@
     background: #84A278;
   
   }
-  .hero-container {
-    padding-top: 38px;
-    padding-bottom: 236px;
+  // .hero-container {
+  //   padding-top: 38px;
+  //   padding-bottom: 236px;
   
-    background-image: url('../images/hero/dots_mobile.png');
-    background-repeat: no-repeat;
-    background-position: bottom 0px center;
+  //   background-image: url('../images/hero/dots_mobile.png');
+  //   background-repeat: no-repeat;
+  //   background-position: bottom 0px center;
   
-    @media screen and (min-width: 768px) {
-      padding-bottom: 24px;
-      background-image: url('../images/hero/tablet@1x.png');
-    }
+  //   @media screen and (min-width: 768px) {
+  //     padding-bottom: 24px;
+  //     background-image: url('../images/hero/tablet@1x.png');
+  //   }
   
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 103px;
-      background-image: url('../images/hero/dots_1200.png');
-    }
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     padding-bottom: 103px;
+  //     background-image: url('../images/hero/dots_1200.png');
+  //   }
+  // }
   .hero-flex-box {
     display: flex;
     justify-content: space-between;
