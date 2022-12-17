@@ -73,9 +73,11 @@
     padding: 12px 36px;
     background-color: $defaultBtnBgColor;
     color: $buttonTextColor;
+    fill: $buttonTextColor;
     transition: background-color $transition, 
     border-color $transition, 
-    color $transition;
+    color $transition,
+    fill $transition;
     &:hover{
         background-color: $hoverFocusBtnBgColor;
         border-color: $hoverFocusBtnBgColor;
@@ -84,6 +86,7 @@
         background-color: $hoverFocusBtnBgColor;
         border-color: $hoverFocusBtnBgColor;
         color: #ffffff;
+        fill: #ffffff;
     }
     @media screen and (max-width: 767px) {
         display: none;
@@ -99,7 +102,7 @@
     overflow: auto;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 5;
     padding: 12px 32px 10vh;
     background-color: $mobileMenuBgColor;
     transform: translateX(150%);
@@ -176,10 +179,12 @@
     margin-right: auto;
     margin-left: auto;
     color: $buttonTextColor;
+    fill: $buttonTextColor;
     background-color: $defaultBtnBgColor;
     transition: background-color $transition, 
     border-color $transition, 
-    color $transition;
+    color $transition,
+    fill $transition;
     &:hover{
         background-color: $hoverFocusBtnBgColor;
         border-color: $hoverFocusBtnBgColor;
@@ -188,6 +193,7 @@
         background-color: $hoverFocusBtnBgColor;
         border-color: $hoverFocusBtnBgColor;
         color: #ffffff;
+        fill: #ffffff;
     }
     @media screen and (min-width: 768px) {
         display: none;
@@ -196,15 +202,15 @@
 
 //Модальне вікно
 .buy-modal{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
     width: 280px;
+    max-width: 700px;
     padding: 28px;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     display: block;
     align-items: center;
+    overflow: auto;
+    z-index: 6;
 }
 
 .buy-modal-close{
@@ -268,22 +274,41 @@
 .custom-box-green::before{
     top: 96px;
     background-image: url(../images/header/ice-cream.jpg);
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);   
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .custom-box-green::before {
+    background-image: url(../images/header/ice-cream@2x.jpg);
+}}
 
 .custom-box-yellow::before{
     top: 305px;
-    background-image: url(../images/header/ice-cofee.jpg);
+    background-image: url(../images/header/ice-coffee.jpg);
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .custom-box-yellow::before {
+    background-image: url(../images/header/ice-coffee@2x.jpg);
+}}
 
 .custom-box-red::before{
     top: 503px;
     background-image: url(../images/header/milkshake.jpg);
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .custom-box-red::before{
+    background-image: url(../images/header/milkshake@2x.jpg);
+}}
 
 .custom-box{
     display: block;

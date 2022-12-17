@@ -1,47 +1,128 @@
 <section class="products" id="products">
   <div class="container">
     <p class="products-subtitle">100% natural</p>
-    <h2 class="products-title"">products</h2>
-
+    <h2 class="products-title">products</h2>
     <ul class="products-list">
+    <!-- ICE CREAM -->
       <li class="products-item ice-cream">
-        <div class="products-card">
             <h3 class="products-item-title">ice cream</h3>
             <p class="products-item-text">
               Soft ice cream with a delicate taste. Made with milk, cream, sugar
               and natural stabilizer
             </p>
-            </div>
-            <svg class="products-item-icon" width="40" height="16">
+            <button type="button" class="products-button js-open-modal" data-modal="p">
+            <svg class="products-button-icon" width="40" height="16">
               <use href="./images/images-sprite.svg#icon-black-arrow"></use>
             </svg>
+            </button>
       </li>
-
+    <!-- ICE COFFEE -->
       <li class="products-item ice-coffee">
-        <div class="products-card">
             <h3 class="products-item-title">ice coffee</h3>
             <p class="products-item-text">
               Fragrant invigorating drink created from 100% natural ingredients
               without the use of preservatives and flavor enhancers
             </p>
-        </div>
-            <svg class="products-item-icon" width="40" height="16">
+        <button type="button" class="products-button js-open-modal" data-modal="p">
+            <svg class="products-button-icon" width="40" height="16">
               <use href="./images/images-sprite.svg#icon-black-arrow"></use>
             </svg>
+            </button>
       </li>
-
+    <!-- MILKSHAKES -->
       <li class="products-item milkshakes">
-        <div class="products-card">
             <h3 class="products-item-title">milkshakes</h3>
             <p class="products-item-text">
               Sweet drinks based on milk and ice cream, supplemented with
               syrups, fruits, berries and other sweets of your choice
             </p>
-            </div>
-            <svg class="products-item-icon" width="40" height="16">
+      <!-- MODAL BUTTON -->
+            <button type="button" class="products-button js-open-modal" data-modal="p">
+            <svg class="products-button-icon" width="40" height="16">
               <use href="./images/images-sprite.svg#icon-black-arrow"></use>
             </svg>
+            </button>
       </li>
     </ul>
   </div>
+
+  <!-- MODAL WINDOW -->
+  <div class="modal" data-modal="p">
+    <svg class="products-modal-close js-modal-close">
+      <use href="./images/images-sprite.svg#icon-menu-close"></use>
+    </svg>
+
+<!-- MODAL FORM -->
+<form class="modal-products-form">
+<h2 class="modal-products-title">Chocolate icecream</h2>
+
+<div class="modal-products-background">
+  <img class="modal-products-img" src="#" alt="" width="" height="">
+</div>
+
+<ul class="modal-products-components">
+  <li class="modal-products-wrap">
+    <div class="modal-products-amount">
+      <p class="modal-products-number">320</p>
+    </div>
+    <p class="modal-products-text">kcal</p>
+  </li>
+  <li class="modal-products-wrap">
+    <div class="modal-products-amount">
+      <p class="modal-products-number">4g</p>
+    </div>
+    <p class="modal-products-text">Prote...</p>
+  </li>
+  <li class="modal-products-wrap">
+    <div class="modal-products-amount">
+      <p class="modal-products-number">8,2g</p>
+    </div>
+    <p class="modal-products-text">Fats</p>
+  </li>
+  <li class="modal-products-wrap">
+    <div class="modal-products-amount">
+      <p class="modal-products-number">40,4g</p>
+    </div>
+    <p class="modal-products-text">Carbs</p>
+  </li>
+</ul>
+
+
+
+<h3 class="modal-products-subtitle">Ingredients</h3>
+
+<div class="modal-products-wrapper">
+<div class="modal-products-block">
+<ul class="modal-products-list ingredients">
+  <li class="modal-products-item">Belgian chocolate</li>
+  <li class="modal-products-item">Milk</li>
+  <li class="modal-products-item">Cream</li>
+  <li class="modal-products-item">Cocoa powder</li>
+  <li class="modal-products-item">Sugar</li>
+  <li class="modal-products-item">Vanilla sugar</li>
+</ul>
+  <ul class="modal-products-list amount">
+    <li class="modal-products-item">100ml</li>
+    <li class="modal-products-item">20g</li>
+    <li class="modal-products-item">150ml</li>
+    <li class="modal-products-item">30g</li>
+    <li class="modal-products-item">40g</li>
+    <li class="modal-products-item">10g</li>
+  </ul>
+</div>
+</div>
+
+<div class="modal-products-field">
+  <input class="modal-products-input" type="text" name="username" placeholder="Name">
+</div>
+<div class="modal-products-field">
+  <input class="modal-products-input" type="tel" name="telephone" placeholder="Phone">
+</div>
+<div class="modal-products-field">
+  <textarea class="modal-products-message" name="comment" rows="4" placeholder="Comment"></textarea>
+  <button type="submit" class="modal-products-btn">Submit</button>
+</div>
+</form>
+  </div>
+
 </section>
