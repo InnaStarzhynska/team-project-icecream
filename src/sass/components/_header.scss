@@ -133,6 +133,7 @@
     border: none;
     padding: 0;
     height: 41px;
+    cursor: pointer;
     @media screen and (min-width: 1200px) {
         display: none;
     }
@@ -211,9 +212,6 @@
     overflow: auto;
     z-index: 6;
     pointer-events: none;
-    @media screen and (min-width: 768px) {
-        width: 568px;
-    }
 }
 
 .buy-modal.active{
@@ -222,7 +220,11 @@
 
 .buy-modal.modal{
     max-height: 700px;
-    
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        max-width: 568px;
+        padding: 32px 54px;
+    }
 }
 .buy-modal-close{
     position: absolute;
@@ -233,6 +235,16 @@
     border: none;
     padding: 0;
     height: 41px;
+    cursor: pointer;
+}
+
+.buy-modal-form{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        justify-content: center;
+    }
 }
 
 .buy-modal-title{
@@ -242,11 +254,18 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
 
 .buy-modal-checkbox{
     display: block;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .custom-box{
@@ -261,6 +280,15 @@
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+    outline: transparent;
+    transition: border-color $transition;
+    &:focus{
+        border-color: $hoverFocusBtnBgColor;
+    }
+    @media screen and (min-width: 768px) {
+        width: 324px;
+        padding: 11px 16px;
+    }
 }
 
 .buy-modal-checkbox-none{
@@ -286,7 +314,10 @@
 .custom-box-green::before{
     top: 96px;
     background-image: url(../images/header/ice-cream.jpg);
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);   
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25); 
+    @media screen and (min-width: 768px) {
+        right: 378px;
+    }  
 }
 
 .custom-box-green::after,
@@ -305,6 +336,9 @@
 .custom-box-green::after{
     background-image: radial-gradient(circle at center,rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
     top: 104px;
+    @media screen and (min-width: 768px) {
+        right: 378px;
+    }  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -318,12 +352,20 @@
     top: 302px;
     background-image: url(../images/header/ice-coffee.jpg);
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    @media screen and (min-width: 768px) {
+        top: 96px;
+        right: 215px;
+    }  
 }
 
 
 .custom-box-yellow::after{
     background-image: radial-gradient(circle at center, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     top: 311px;
+    @media screen and (min-width: 768px) {
+        top: 104px;
+        right: 215px;
+    }  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -337,11 +379,19 @@
     top: 498px;
     background-image: url(../images/header/milkshake.jpg);
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 768px) {
+        top: 96px;
+        right: 54px;
+    }  
 }
 
 .custom-box-red::after{
     background-image: radial-gradient(circle at center, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
     top: 506px;
+    @media screen and (min-width: 768px) {
+        top: 104px;
+        right: 54px;
+    }  
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -408,4 +458,16 @@
     margin-right: auto;
     margin-left: auto;
     background-color: $defaultBtnBgColor;
+    transition: background-color $transition,
+    border-color $transition,
+    color $transition;
+    &:hover{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+    }
+    &:focus{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+        color: #ffffff;
+    }
 }
