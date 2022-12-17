@@ -1,21 +1,39 @@
 .header{
     background-color: $mainBgColor;
+    @media screen and (max-width: 480px) {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
 }
 
 .header .container{
     display: flex;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         padding-top: 12px;
         padding-bottom: 50px;
     }
+    @media screen and (max-width: 1199px) {
+        padding-top: 20px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 8px;
+        padding-bottom: 45px;
+        align-items: center;
+    }
 }
 
+
 .logo{
-    width:40px;
-    height:37px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 308px;
+    }
 }
 
 .site-nav{
+    margin-right: 205px;
     @media screen and (max-width: 1199px) {
         display: none;
     }
@@ -26,20 +44,47 @@
 }
 
 .site-nav-list-item{
+    &:not(:last-child){
+        margin-right: 28px;
+    }
+}
+
+.site-nav-list-link{
+    @extend %link;
     font-family: $mainFont;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     color: $lightTextColor;
-    &:not(:last-child){
-        margin-right: 28px;
+    transition: color $transition;
+    &:hover,&:focus{
+        color: $accentTextColor;
     }
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
 }
 
 .header-button{
     @extend %button;
     padding: 12px 36px;
     background-color: $defaultBtnBgColor;
+    color: $buttonTextColor;
+    transition: background-color $transition, 
+    border-color $transition, 
+    color $transition;
+    &:hover{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+    }
+    &:focus{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+        color: #ffffff;
+    }
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -55,23 +100,31 @@
     width: 100vw;
     height: 100vh;
     z-index: 999;
-    padding: 100px 32px 64px;
+    padding: 12px 32px 10vh;
     background-color: $mobileMenuBgColor;
     transform: translateX(150%);
-    @media screen and (min-width: 768px) {
+    transition: transform $transition;
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 }
+
 
 .mobile-menu.is-open {
     transform: translateX(0);
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-logo{
+    margin-bottom: 51px;
+}
+
 .mobile-menu-button,
 .mobile-menu-close{
-    position: absolute;
-    top: 17px;
-    right: 20px;
     background-color: $mainBgColor;
     fill: #ffffff;
     border: none;
@@ -82,19 +135,37 @@
     }
 }
 
-.mobile-menu-site-nav{
-    margin-bottom: 34vh;
+.mobile-menu-button{
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+    }
 }
 
-.mobile-menu-item{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.22;
-    color: $lightTextColor;  
+.mobile-menu-site-nav{
+    margin-bottom: 21vh;
+}
+
+.mobile-menu-item{  
     text-align: center;
     &:not(:last-child){
         margin-bottom: 32px;
     }
+}
+
+.mobile-menu-link{
+    @extend %link;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    color: $lightTextColor;
+    transition: color $transition;
+    &:hover,&:focus{
+        color: $darkTextColor;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+
 }
 
 .mobile-header-button{
@@ -104,5 +175,21 @@
     display: block;    
     margin-right: auto;
     margin-left: auto;
+    color: $buttonTextColor;
     background-color: $defaultBtnBgColor;
+    transition: background-color $transition, 
+    border-color $transition, 
+    color $transition;
+    &:hover{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+    }
+    &:focus{
+        background-color: $hoverFocusBtnBgColor;
+        border-color: $hoverFocusBtnBgColor;
+        color: #ffffff;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
