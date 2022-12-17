@@ -193,3 +193,153 @@
         display: none;
     }
 }
+
+//Модальне вікно
+.buy-modal{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    padding: 28px;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    display: block;
+    align-items: center;
+}
+
+.buy-modal-close{
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    background-color: $secondaryBgColor;
+    fill: $darkTextColor;
+    border: none;
+    padding: 0;
+    height: 41px;
+}
+
+.buy-modal-title{
+    font-family: $titleFont;
+    text-align: center;
+    margin-bottom: 83px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buy-modal-checkbox{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.custom-box{
+    width: 132px;
+    height: 135px;
+}
+
+.modal-form-input,
+.modal-form-coment{
+    width: 224px;
+    padding: 8px 12px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+.buy-modal-checkbox-none{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+}
+
+.custom-box-green::before,
+.custom-box-yellow::before,
+.custom-box-red::before{
+    position: absolute;
+    right: 72px;
+    content: '';
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+    border-radius: 98px;
+    background-size: contain;
+}
+
+.custom-box-green::before{
+    top: 96px;
+    background-image: url(../images/header/ice-cream.jpg);
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    
+}
+
+.custom-box-yellow::before{
+    top: 305px;
+    background-image: url(../images/header/ice-cofee.jpg);
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.custom-box-red::before{
+    top: 503px;
+    background-image: url(../images/header/milkshake.jpg);
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+}
+
+.custom-box{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    padding: 96px 10px 20px;
+    border-radius: 15px;
+}
+
+.custom-box-green{
+    border: 2px solid $tabletMenuBgColor;
+}
+
+.buy-modal-checkbox-none:checked + .custom-box-green{
+    background-color: $tabletMenuBgColor;
+}
+
+.custom-box-yellow{
+    border: 2px solid $iceCofeeBBgColor;
+}
+
+.buy-modal-checkbox-none:checked + .custom-box-yellow{
+    background-color: $iceCofeeBBgColor;
+}
+
+.custom-box-red{
+    border: 2px solid $milkshakesBgColor;
+}
+
+.buy-modal-checkbox-none:checked + .custom-box-red{
+    background-color: $milkshakesBgColor;
+}
+
+.modal-form-input{
+    margin-bottom: 12px;
+}
+
+.modal-form-coment{
+    
+    resize: none;
+    margin-bottom: 26px;
+}
+
+::placeholder{
+    color: $darkTextColor;
+}
+.buy-modal-button{
+    @extend %button;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $defaultBtnBgColor;
+}

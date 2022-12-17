@@ -44,7 +44,9 @@
         </svg>
       </button>
 
-      <button type="button" class="header-button">Buy now &#62;</button>
+      <button type="button" class="header-button js-open-modal" data-modal="1">
+        Buy now &#62;
+      </button>
     </div>
 
     <div class="mobile-menu js-menu-container" id="mobile-menu">
@@ -78,7 +80,82 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="mobile-header-button">Buy now &#62;</button>
+      <button
+        type="button"
+        class="mobile-header-button js-open-modal"
+        data-modal="1"
+      >
+        Buy now &#62;
+      </button>
     </div>
   </div>
 </header>
+
+<div class="buy-modal modal" data-modal="1">
+  <button type="button" class="buy-modal-close">
+    <svg width="12" height="12">
+      <use href="./images/images-sprite.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+
+  <h1 class="buy-modal-title">Buy now</h1>
+
+  <form action="" class="buy-modal-form">
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="ice cream"
+        class="buy-modal-checkbox-none"
+      />
+      <div class="custom-box custom-box-green">ice cream</div>
+    </label>
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="ice coffee"
+        class="buy-modal-checkbox-none"
+        checked
+      />
+      <div class="custom-box custom-box-yellow">ice coffee</div>
+    </label>
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="milkshake"
+        class="buy-modal-checkbox-none"
+      />
+      <div class="custom-box custom-box-red">milkshake</div>
+    </label>
+    <label class="buy-modal-field">
+      <input
+        type="text"
+        name="name"
+        class="modal-form-input"
+        placeholder="Name"
+      />
+    </label>
+    <label class="buy-modal-field">
+      <input
+        type="tel"
+        name="telefone"
+        class="modal-form-input"
+        placeholder="Phone"
+      />
+    </label>
+    <label>
+      <textarea
+        name="feedback"
+        rows="4"
+        placeholder="Comment"
+        class="modal-form-coment"
+      ></textarea>
+    </label>
+    <button type="submit" class="buy-modal-button">Submit</button>
+  </form>
+</div>
