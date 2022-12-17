@@ -45,7 +45,10 @@
       </button>
 
       <button type="button" class="header-button js-open-modal" data-modal="1">
-        Buy now &#62;
+        Buy now
+        <svg width="6" height="10">
+          <use href="./images/images-sprite.svg#icon-button-arrow"></use>
+        </svg>
       </button>
     </div>
 
@@ -85,20 +88,23 @@
         class="mobile-header-button js-open-modal"
         data-modal="1"
       >
-        Buy now &#62;
+        Buy now
+        <svg width="6" height="10">
+          <use href="./images/images-sprite.svg#icon-button-arrow"></use>
+        </svg>
       </button>
     </div>
   </div>
 </header>
 
 <div class="buy-modal modal" data-modal="1">
-  <button type="button" class="buy-modal-close">
+  <button type="button" class="buy-modal-close js-modal-close">
     <svg width="12" height="12">
       <use href="./images/images-sprite.svg#icon-menu-close"></use>
     </svg>
   </button>
 
-  <h1 class="buy-modal-title">Buy now</h1>
+  <p class="buy-modal-title">Buy now</p>
 
   <form action="" class="buy-modal-form">
     <label class="buy-modal-checkbox">
@@ -109,7 +115,7 @@
         value="ice cream"
         class="buy-modal-checkbox-none"
       />
-      <div class="custom-box custom-box-green">ice cream</div>
+      <span class="custom-box custom-box-green">ice cream</span>
     </label>
     <label class="buy-modal-checkbox">
       <input
@@ -120,7 +126,7 @@
         class="buy-modal-checkbox-none"
         checked
       />
-      <div class="custom-box custom-box-yellow">ice coffee</div>
+      <span class="custom-box custom-box-yellow">ice coffee</span>
     </label>
     <label class="buy-modal-checkbox">
       <input
@@ -130,7 +136,7 @@
         value="milkshake"
         class="buy-modal-checkbox-none"
       />
-      <div class="custom-box custom-box-red">milkshake</div>
+      <span class="custom-box custom-box-red">milkshake</span>
     </label>
     <label class="buy-modal-field">
       <input
