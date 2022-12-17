@@ -28,7 +28,6 @@ body {
 
     background-image: url(../images/body/backgroud_mobile@1x.jpg);
     background-position: center;
-    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -63,8 +62,8 @@ body {
     padding-right: 20px;
     margin: 0 auto;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (min-width:320px) {
+        width: 320px;
     }
 
     @media screen and (min-width: 768px) {
@@ -82,7 +81,7 @@ body {
     }
 }
 
-.visually-hidden {
+ .visually-hidden{
     position: absolute;
     white-space: nowrap;
     width: 1px;

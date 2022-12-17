@@ -1,45 +1,161 @@
 <header class="header">
   <div class="container">
-    <img class="logo" src="./images/header/logo.png" alt="" />
+    <img
+      class="logo"
+      srcset="
+        ./images/header/logo.png         40w,
+        ./images/header/logo@2x.png      80w,
+        ./images/header/logoTabl.png     48w,
+        ./images/header/logoTabl@2x.png  96w,
+        ./images/header/logoDesk.png     65w,
+        ./images/header/logoDesk@2x.png 130w
+      "
+      sizes="(min-width:1200px) 65px, (min-width:768px) 48px, 40px"
+      src="./images/header/logo.png"
+      alt="ice-cream"
+    />
 
     <nav class="site-nav">
       <ul class="site-nav-list">
-        <li class="site-nav-list-item">Home</li>
-        <li class="site-nav-list-item">How it’s made?</li>
-        <li class="site-nav-list-item">Our products</li>
-        <li class="site-nav-list-item">Contact</li>
+        <li class="site-nav-list-item">
+          <a href="" class="site-nav-list-link">Home</a>
+        </li>
+        <li class="site-nav-list-item">
+          <a href="" class="site-nav-list-link">How it’s made?</a>
+        </li>
+        <li class="site-nav-list-item">
+          <a href="" class="site-nav-list-link">Our products</a>
+        </li>
+        <li class="site-nav-list-item">
+          <a href="" class="site-nav-list-link">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <button
-      type="button"
-      class="mobile-menu-button js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg width="32" height="32">
-        <use href="./images/images-sprite.svg#icon-menu-button"></use>
-      </svg>
-    </button>
-
-    <button type="button" class="header-button">Buy now &#62;</button>
-
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button class="mobile-menu-close js-close-menu">
+    <div class="buttons">
+      <button
+        type="button"
+        class="mobile-menu-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg width="32" height="32">
-          <use href="./images/images-sprite.svg#icon-menu-close"></use>
+          <use href="./images/images-sprite.svg#icon-menu-button"></use>
         </svg>
       </button>
 
+      <button type="button" class="header-button js-open-modal" data-modal="1">
+        Buy now &#62;
+      </button>
+    </div>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="menu">
+        <img
+          src="./images/header/logo.png"
+          alt="ice-cream"
+          class="mobile-menu-logo"
+        />
+
+        <button class="mobile-menu-close js-close-menu">
+          <svg width="32" height="32">
+            <use href="./images/images-sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+      </div>
+
       <nav class="mobile-menu-site-nav">
         <ul class="mobile-menu-site-nav-list">
-          <li class="mobile-menu-item">Home</li>
-          <li class="mobile-menu-item">How it’s made?</li>
-          <li class="mobile-menu-item">Our products</li>
-          <li class="mobile-menu-item">Contact</li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Our products</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Contact</a>
+          </li>
         </ul>
       </nav>
-      <button type="button" class="mobile-header-button">Buy now &#62;</button>
+      <button
+        type="button"
+        class="mobile-header-button js-open-modal"
+        data-modal="1"
+      >
+        Buy now &#62;
+      </button>
     </div>
   </div>
 </header>
+
+<div class="buy-modal modal" data-modal="1">
+  <button type="button" class="buy-modal-close">
+    <svg width="12" height="12">
+      <use href="./images/images-sprite.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+
+  <h1 class="buy-modal-title">Buy now</h1>
+
+  <form action="" class="buy-modal-form">
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="ice cream"
+        class="buy-modal-checkbox-none"
+      />
+      <div class="custom-box custom-box-green">ice cream</div>
+    </label>
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="ice coffee"
+        class="buy-modal-checkbox-none"
+        checked
+      />
+      <div class="custom-box custom-box-yellow">ice coffee</div>
+    </label>
+    <label class="buy-modal-checkbox">
+      <input
+        type="checkbox"
+        name="
+      choice"
+        value="milkshake"
+        class="buy-modal-checkbox-none"
+      />
+      <div class="custom-box custom-box-red">milkshake</div>
+    </label>
+    <label class="buy-modal-field">
+      <input
+        type="text"
+        name="name"
+        class="modal-form-input"
+        placeholder="Name"
+      />
+    </label>
+    <label class="buy-modal-field">
+      <input
+        type="tel"
+        name="telefone"
+        class="modal-form-input"
+        placeholder="Phone"
+      />
+    </label>
+    <label>
+      <textarea
+        name="feedback"
+        rows="4"
+        placeholder="Comment"
+        class="modal-form-coment"
+      ></textarea>
+    </label>
+    <button type="submit" class="buy-modal-button">Submit</button>
+  </form>
+</div>
