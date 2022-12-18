@@ -1,7 +1,7 @@
 .hero {
   min-width: 320px;
-  background: #84A278;
-
+  background: var($mainBgColor: #84A178);
+  
   @media screen and (max-width:480px){
     padding-top: 74px;
   }
@@ -29,6 +29,8 @@
       width: 1200px;
   }
 }
+
+
 .hero-container {
   position: relative;
   padding-top: 38px;
@@ -173,56 +175,91 @@
   }
 }
 
-.hero-btn {
+
+.hero-link-products {
+  @extend %link;
+  padding: 11px 24px;
+  cursor: pointer;
+   
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
   display: flex;
   align-items: center;
   text-align: center;
+  
   color: #000000;
+
   border: 2px solid #F8D24E;
   border-radius: 8px;
-  background-color: #84A278;
-  padding: 11px 26px;
-  min-width: 108px;
-  max-height: 38px;
-  margin-right: 34px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-
-  @media screen and (min-width: 1200px) {
-    min-width: 134px;
-    max-height: 42px;
-    padding: 12px 34px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:hover {
+    border-color: #0A8817;
+    
+  }
+  &:focus {
+    border-color:#0A8817;
+    @media screen and (min-width: 1200px) {
+      color: #fcfcfc;
+     
+    }
   }
 
-  &:hover,
-  &:focus {
-    background-color: #F8D24E;
+  &:disabled {
+    border-color: #ababab;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 32px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-radius: 10px;
   }
 }
 
-.hero-link {
-  display: flex;
+
+.hero-link-about{
+
+  cursor: pointer;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
   align-items: center;
   text-align: center;
-  text-decoration-line: underline;
-  color: #F8D24E;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: underline;
 
-  &:hover,
+  color: #F8D24E;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color:  #0A8817;;
+  }
+
   &:focus {
-    color: #000000;
+    color:#FCFCFC;
+  }
+
+  &:disabled {
+    color: #ababab;
+
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 114px;
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
   }
 }
+
+
+
 
 .hero-benefits {
   margin-top: 14px;
