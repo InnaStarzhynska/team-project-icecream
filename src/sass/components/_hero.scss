@@ -1,7 +1,8 @@
 .hero {
-  min-width: 320px;
-  background: var($mainBgColor: #84A178);
   
+  background-color: $mainBgColor;
+  min-width: 320px;
+
   @media screen and (max-width:480px){
     padding-top: 74px;
   }
@@ -65,15 +66,15 @@
 }
 
 .hero-title {
-  font-family: 'Seymour One';
+  font-family:$titleFont;
   font-weight: 400;
   font-size: 26px;
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #FCFCFC;
   max-width: 247px;
   margin-bottom: 32px;
+  color:$lightTextColor;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -116,9 +117,10 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: $darkTextColor;
   text-decoration: none;
   list-style: none;
+  
 
   @media screen and (max-width: 767.98px) {
     display: none;
@@ -138,7 +140,7 @@
 .hero-item-text {
   font-weight: 400;
   text-align: right;
-  color: #FCFCFC;
+  color:$lightTextColor;
 
   .hero-picture {
     display: none;
@@ -188,26 +190,26 @@
   align-items: center;
   text-align: center;
   
-  color: #000000;
+  color:$buttonTextColor;
 
-  border: 2px solid #F8D24E;
+  border: 2px solid $accentTextColor;
   border-radius: 8px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition;
     
   &:hover {
-    border-color: #0A8817;
+    border-color: $hoverFocusBtnBgColor;
     
   }
   &:focus {
-    border-color:#0A8817;
+    border-color: $hoverFocusBtnBgColor;
     @media screen and (min-width: 1200px) {
-      color: #fcfcfc;
+      color: $secondaryBgColor;
      
     }
   }
 
   &:disabled {
-    border-color: #ababab;
+    border-color: $disabledBtnBgColor;
   }
 
   @media screen and (min-width: 1200px) {
@@ -230,20 +232,20 @@
   text-align: center;
   text-decoration: underline;
 
-  color: #F8D24E;
+  color: $defaultBtnBgColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color:  #0A8817;;
+    color: $defaultBtnBgColor;
   }
 
   &:focus {
-    color:#FCFCFC;
+    color: $secondaryBgColor;
   }
 
   &:disabled {
-    color: #ababab;
+    color: $disabledBtnBgColor;
 
   }
 
@@ -283,7 +285,7 @@
 
 .hero-benefits-numbers {
   margin-bottom: 4px;
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
@@ -291,7 +293,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: $darkTextColor;
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -300,7 +302,7 @@
 }
 
 .hero-benefits-name {
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -329,12 +331,12 @@
 .hero-text {
   max-width: 139px;
   margin-left: 184px;
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(17 / 12);
-  color: #FCFCFC;
+  color:$lightTextColor;
 
   @media screen and (max-width: 767.98px) {
     display: none;
@@ -351,7 +353,7 @@
 .hero-text-arrow {
   display: block;
   margin-top: 12px;
-  fill: #FCFCFC;
+  fill: $lightTextColor;
 
   @media screen and (min-width: 1200px) {
     margin-top: 24px;
@@ -387,3 +389,10 @@
     bottom: 65px;
   }
 }
+
+
+
+
+
+
+
