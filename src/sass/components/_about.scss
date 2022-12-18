@@ -7,8 +7,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
 
-  .main-text-one {
+  .about-main-text-one {
     font-family: $mainFont;
     font-weight: 700;
     font-size: 18px;
@@ -34,7 +35,7 @@
     }
   }
 
-  .main-text {
+  .about-main-text {
     font-family: $titleFont;
     font-style: normal;
     font-weight: 400;
@@ -66,7 +67,7 @@
     }
   }
 
-  .block {
+  .about-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +82,7 @@
     }
   }
 
-  .image {
+  .about-image {
     width: 279px;
     height: 279px;
 
@@ -96,6 +97,8 @@
 
     margin: 0 auto;
 
+
+
     @media screen and (min-width: 768px) {
       width: 330px;
       height: 330px;
@@ -108,9 +111,10 @@
       height: auto;
       box-shadow: 0px -39px #ebd686;
     }
+
   }
 
-  .list {
+  ul.about-list {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -136,7 +140,7 @@
     }
   }
 
-  .text {
+  .about-text {
     font-family: $mainFont;
     font-style: normal;
     font-weight: 400;
@@ -158,7 +162,7 @@
     }
   }
 
-  .text-one {
+  .about-text-one {
     font-family: $mainFont;
     font-style: normal;
     font-weight: 400;
@@ -182,7 +186,7 @@
     }
   }
 
-  .text-two {
+  .about-text-two {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -204,7 +208,7 @@
     }
   }
 
-  .button {
+  .about-button {
     margin: 0 auto;
     margin-top: 10px;
 
@@ -232,20 +236,20 @@
       margin-top: 54px;
     }
   }
-  .button:hover {
+  .about-button:hover {
     background-color: $hoverFocusBtnBgColor;
     color: $buttonTextColor;
   }
-  .button:focus {
+  .about-button:focus {
     background-color: $hoverFocusBtnBgColor;
     color: $secondaryBgColor;
     fill: $secondaryBgColor;
   }
-  .button:disabled {
+  .about-button:disabled {
     background-color: $disabledBtnBgColor;
   }
 
-  .button-text {
+  .about-button-text {
     font-family: $mainFont;
     font-style: normal;
     font-weight: 600;
@@ -254,4 +258,146 @@
 
     margin-right: 7px;
   }
-}
+
+/* Стили для подложки */
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    width: 280px;
+    height: auto;
+
+  
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 28px;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background-color: #fff;
+    transition: 0.3s all;
+
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        height: 449px;
+      }
+ }
+ 
+ 
+ /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill: #444;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+        top: 17px;
+        right: 17px;
+      }
+ }
+ 
+ 
+ /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+ 
+ .about__modal-title{
+    font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+margin: 0 auto;
+ margin-bottom: 20px;
+
+color: #131313;
+
+@media screen and (min-width: 768px) {
+margin-bottom: 32px;
+font-size: 20px;
+line-height: 140%;
+  }
+ }
+
+ .about-video{
+    width: 224px;
+    height: 199px;
+    
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    @media screen and (min-width: 768px) {
+        width: 448px;
+        height: 205px;
+        margin-bottom: 32px;
+          }
+ }
+
+ .about__modal-text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+
+      }
+
+// padding-bottom: 20px;
+/* or 20px */
+
+// margin-top: 20px;
+color: #131313;
+
+ }
