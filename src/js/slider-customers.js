@@ -1,10 +1,10 @@
 $(".customer_slider").slick({
   dots: true,
   infinite: true,
-  speed: 1000,
+  speed: 2000,
   slidesToShow: 1,
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 10000,
   pausOnDotHover: true,
   pauseOnFocus: true,
