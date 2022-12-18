@@ -1,22 +1,19 @@
-
-// .advantages {}
-
-
+.advantages {
+  background: $mainBgColor;
+}
 .advantages-container {
   padding-top: 65px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
-  background: $mainBgColor;
   padding-bottom: 32px;
-
 
 @media screen and (min-width: 768px) {
     padding-top: 82px;
     width: 768px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 86px;
+    padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -46,29 +43,35 @@
 
 .advantages-item-1 {
   position: relative;
+  margin-bottom: 94px;
 
 @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 160px) / 3);
     position: relative;
-  }
-
-@media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 64px) / 3);
-    position: relative;
-  }
-}
-
-.advantages-item-2 {
-  position: relative;
-
-@media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 160px) / 3);
-    position: relative;
+    padding-bottom: 0;
   }
 
 @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 64px) / 3);
     position: relative;
+    padding-bottom: 0;
+  }
+}
+
+.advantages-item-2 {
+  position: relative;
+  margin-bottom: 94px;
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 160px) / 3);
+    position: relative;
+    padding-bottom: 0;
+  }
+
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 64px) / 3);
+    position: relative;
+    padding-bottom: 0;
   }
 }
 
@@ -79,11 +82,13 @@
 @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 160px) / 3);
     position: relative;
+    padding-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 64px) / 3);
     position: relative;
+    padding-bottom: 0;
   }
 }
 
@@ -133,7 +138,7 @@
   left: calc(135px - 20px);
   top: -65px;
 
-  background-color: #F8D24E;
+  background-color: $accentTextColor;
   background-image: url(/src/images/advantages/ice.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -170,7 +175,7 @@
   left: calc(135px - 20px);
   top: -65px;
 
-  background-color: #F8D24E;
+  background-color: $accentTextColor;
   background-image: url(/src/images/advantages/weight.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -216,6 +221,7 @@
     font-size: 48px;
     line-height: calc(59px / 48px);
     margin-bottom: 12px;
+    text-transform: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -233,9 +239,6 @@
   text-align: center;
 
   color: $lightTextColor;
-
-  margin-bottom: 94px;
-
 
 @media screen and (min-width: 768px) {
     font-weight: 400;
