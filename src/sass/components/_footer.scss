@@ -8,19 +8,22 @@
         padding-bottom: 12px;
     }
 }
+// .footer-block {
+//     position: relative;
+// }
 .footer-name {
      @media screen and (min-width: 1200px) {
        margin-bottom: 60px;
     }
 }
 .footer-container-wrapper {
-    border-bottom: 1px solid $footerBorder;
-    margin-bottom: 20px;
+    // border-bottom: 1px solid $footerBorder;
+    // margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 12px;
+        // margin-bottom: 12px;
       }
 }
 .footer-doubletitel {
@@ -63,12 +66,13 @@
         line-height: calc(59 / 48);
         letter-spacing: 0.06em;
         margin-top: 8px;
+        width: 352px;
     }
     @media screen and (min-width: 1200px) {
-        width: 500px;
         font-size: 58px;
         line-height: calc(71 / 58);
         margin-top: 14px;
+        width: 500px;
     }
  
 }
@@ -89,6 +93,10 @@
     display: flex;
     gap: 20px;
     justify-content: end;
+
+    @media screen and (min-width: 1200px) {
+        gap: 30px;
+    }
 }
 .footer-socials-link {
     display: flex;
@@ -97,8 +105,16 @@
     width: 34px;
     height: 34px;
     fill: $mainBgColor;
+
     background-color: $defaultBtnBgColor;
     border-radius: 50%;
+
+    &:hover {
+        fill: $secondaryBgColor;
+    }
+    &:focus {
+        fill: $secondaryBgColor;
+    }
 }
 .footer-socials-icon {
     display: block;
@@ -106,12 +122,17 @@
     height: 20px;
     fill: $mainBgColor;
     
-    &:hover {
-        fill: $secondaryBgColor;
-    }
-    &:focus {
-        fill: $secondaryBgColor;
-    }
+    // &:hover {
+    //     fill: $secondaryBgColor;
+    // }
+    // &:focus {
+    //     fill: $secondaryBgColor;
+    // }
+}
+
+.footer-call {
+    display: flex;
+    justify-content: end;
 }
 .footer-tel {
     display: block;
@@ -121,8 +142,15 @@
     font-weight: 700;
     font-size: 12px;
     line-height: calc(22 / 12);
-    text-align: right;
     margin-top: 20px;
+    color: $lightTextColor;
+
+    &:hover {
+        color: $accentTextColor;
+    }
+    &:focus {
+        color: $accentTextColor;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
@@ -136,10 +164,45 @@
     }
 }
 .tel-first-part {
+    display: block;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    margin-top: 20px;
     color: $darkTextColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(26 / 14);
+        margin-top: 34px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        margin-top: 40px;
+    }
 }
-.tel-last-part {
-    color: $lightTextColor;
+.footer-line {
+    border-bottom: 1px solid $footerBorder;
+    width: auto;
+    
+    margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+        margin-left: -33px;
+        margin-right: -32px;
+    
+    }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .footer-text {
     font-family: $mainFont;
