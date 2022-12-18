@@ -197,11 +197,11 @@
   transition: color $transition;
     
   &:hover {
-    border-color: $hoverFocusBtnBgColor;
+    border-color: $defaultBtnBgColor;
     
   }
   &:focus {
-    border-color: $hoverFocusBtnBgColor;
+    border-color: $defaultBtnBgColor;
     @media screen and (min-width: 1200px) {
       color: $secondaryBgColor;
      
