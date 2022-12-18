@@ -8,22 +8,18 @@
         padding-bottom: 12px;
     }
 }
-// .footer-block {
-//     position: relative;
-// }
+
 .footer-name {
      @media screen and (min-width: 1200px) {
        margin-bottom: 60px;
     }
 }
 .footer-container-wrapper {
-    // border-bottom: 1px solid $footerBorder;
-    // margin-bottom: 20px;
-
+   
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        // margin-bottom: 12px;
+        
       }
 }
 .footer-doubletitel {
@@ -120,14 +116,6 @@
     display: block;
     width: 20px;
     height: 20px;
-    fill: $mainBgColor;
-    
-    // &:hover {
-    //     fill: $secondaryBgColor;
-    // }
-    // &:focus {
-    //     fill: $secondaryBgColor;
-    // }
 }
 
 .footer-call {
