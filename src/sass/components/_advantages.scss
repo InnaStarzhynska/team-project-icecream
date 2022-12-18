@@ -1,19 +1,28 @@
 .advantages {
   background: $mainBgColor;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  padding-bottom: 80px;
+}
+
 }
 .advantages-container {
   padding-top: 65px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
-  padding-bottom: 32px;
+  // padding-bottom: 32px;
 
 @media screen and (min-width: 768px) {
     padding-top: 82px;
     width: 768px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -21,7 +30,7 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
 }
 }
 
@@ -48,13 +57,13 @@
 @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 160px) / 3);
     position: relative;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 64px) / 3);
     position: relative;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -65,13 +74,13 @@
 @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 160px) / 3);
     position: relative;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 64px) / 3);
     position: relative;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
