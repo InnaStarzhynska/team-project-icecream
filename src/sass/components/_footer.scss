@@ -86,14 +86,14 @@
 .footer-contacts {
 
     @media screen and (min-width: 768px) {
-        margin-top: 65px;
+        padding-top: 65px;
        
     }
     @media screen and (min-width: 1200px) {
-        margin-top: 0;
+        padding-top: 0;
     }
-
 }
+
 .footer-socials-list {
     display: flex;
     gap: 20px;
@@ -166,7 +166,8 @@
     }
 }
 .tel-first-part {
-    display: block;
+    margin-right: 5px;
+
     font-family: $mainFont;
     font-style: normal;
     font-weight: 700;

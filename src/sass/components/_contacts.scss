@@ -9,7 +9,7 @@
 // SECTION //
 
 .contacts {
-  margin-top: 40px;
+  padding-top: 40px;
   background-image: linear-gradient(
     to top,
     $mainBgColor 75%,
@@ -43,6 +43,11 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 537px;
+  }
+
   &:last-of-type {
     margin-bottom: 20px;
   }
@@ -73,7 +78,7 @@
   margin-top: 20px;
 }
 
-.contacts-map {
+.contacts-maps {
   @extend %link;
   font-weight: 500;
   line-height: calc(22 / 12);
@@ -90,7 +95,7 @@
   line-height: calc(22 / 12);
 }
 
-.margin-day {
+.contacts-margin-day {
   margin-top: 8px;
 }
 
@@ -118,7 +123,7 @@
   text-align: center;
 }
 
-.btn {
+.contacts-btn {
   @extend %button;
   background-color: $accentTextColor;
   width: 196px;
@@ -169,7 +174,160 @@
   $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:focus .btn-icon {
+.contacts-btn:focus .btn-icon {
   fill: #ffffff;
   $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Modal Location //
+
+.contacts-modal {
+  width: 284px;
+  height: 369px;
+}
+
+.modal-close {
+  fill: #131313;
+  height: 41px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+
+.contacts-title {
+  font-family: $titleFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  margin-top: 28px;
+
+  align-items: center;
+  text-align: center;
+
+  color: $darkTextColor;
+}
+
+.contacts-map {
+  margin-left: 28px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.contacts-link-map {
+  @extend %link;
+}
+
+.contacts-modal-button {
+  background-color: #f8d24e;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+  border-color: transparent;
+  display: block;
+}
+
+// Modal applications //
+
+.applications-modal {
+  padding-left: 28px;
+  width: 284px;
+  height: 678px;
+}
+
+.modal-close {
+  fill: #131313;
+  height: 41px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+
+.applications-title {
+  width: 221px;
+  font-family: $titleFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  align-items: center;
+  text-align: center;
+  margin-top: 28px;
+
+  color: $darkTextColor;
+}
+
+.applications-text {
+  width: 222px;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+
+  color: $darkTextColor;
+}
+
+.applications-form {
+  margin: 0 24px;
+}
+
+.applications-form-item {
+  position: relative;
+  &:first-child {
+    margin-top: 24px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.applications-form-input {
+  width: 224px;
+  height: 32px;
+  background: $formInputBgColor;
+  border: 1px solid $mainBgColor;
+  border-radius: 10px;
+}
+
+.applications-form-label {
+  position: absolute;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+
+  color: $darkTextColor;
+  top: 9px;
+  left: 12px;
+}
+
+.applications-form-textarea {
+  width: 224px;
+  height: 64px;
+  background: $formInputBgColor;
+  border: 1px solid $mainBgColor;
+  border-radius: 10px;
+}
+
+.button {
+  text-align: center;
+  align-items: center;
+  background-color: $accentTextColor;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin: 0 55px;
+  margin-top: 24px;
 }
