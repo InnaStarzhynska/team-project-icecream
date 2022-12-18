@@ -197,11 +197,11 @@
   transition: color $transition;
     
   &:hover {
-    border-color: $defaultBtnBgColor;
+    border-color: $hoverFocusBtnBgColor;
     
   }
   &:focus {
-    border-color: $defaultBtnBgColor;
+    border-color: $hoverFocusBtnBgColor;
     @media screen and (min-width: 1200px) {
       color: $secondaryBgColor;
      
@@ -232,12 +232,12 @@
   text-align: center;
   text-decoration: underline;
 
-  color: $defaultBtnBgColor;
+  color: $accentTextColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color: $defaultBtnBgColor;
+    color:$hoverFocusBtnBgColor ;
   }
 
   &:focus {
