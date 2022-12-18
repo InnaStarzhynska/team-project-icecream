@@ -6,7 +6,6 @@
   padding-top: 65px;
   margin-left: auto;
   margin-right: auto;
-  // padding: 0 0px;
   width: 320px;
   background: $mainBgColor;
   padding-bottom: 32px;
@@ -17,7 +16,7 @@
     width: 768px;
     margin-right: auto;
     margin-left: auto;
-    // padding: 0 0px;
+    padding-bottom: 86px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -25,6 +24,7 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 80px;
 }
 }
 
@@ -35,14 +35,12 @@
     margin-left: 76px;
     margin-right: 76px;
     justify-content: space-between;
-    /* flex-basis: calc((100% - 160px) / 3); */
 }
 
 @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 16px;
     margin-right: 16px;
-    /* flex-basis: calc((100% - 64px) / 3); */
 }
 }
 
@@ -95,23 +93,24 @@
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 135px;
+  left: calc(135px - 20px);
   top: -65px;
 
   background-color: $accentTextColor;
   background-image: url(/src/images/advantages/cow.png); 
   background-repeat: no-repeat;
   background-position: center;
-  // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  //   background-image: url(/src/images/advantages/cow-72@2x.png);
-  // } 
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/cow-72@2x.png);
+    background-size: 75% 75%;
+  } 
 
 @media screen and (min-width: 768px) {
     content: "";
     position: absolute;
     width: 50px;
     height: 50px;
-    left: calc(127px - 76px);
+    left: calc(127px - 76px + 15px);
     top: -82px;
   }
 
@@ -131,23 +130,24 @@
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 135px;
+  left: calc(135px - 20px);
   top: -65px;
 
   background-color: #F8D24E;
   background-image: url(/src/images/advantages/ice.png);
   background-repeat: no-repeat;
   background-position: center;
-  // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  //   background-image: url(/src/images/advantages/ice-72@2x.png);
-  // } 
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/ice-72@2x.png);
+    background-size: 75% 75%;
+  } 
 
 @media screen and (min-width: 768px) {
     content: "";
     position: absolute;
     width: 50px;
     height: 50px;
-    left: calc(127px - 76px);
+    left: calc(127px - 76px + 15px);
     top: -82px;
   }
 
@@ -167,7 +167,7 @@
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 135px;
+  left: calc(135px - 20px);
   top: -65px;
 
   background-color: #F8D24E;
@@ -175,16 +175,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  //   background-image: url(/src/images/advantages/weight-72@2x.png);
-  // } 
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/weight-72@2x.png);
+    background-size: 75% 75%;
+  } 
   
 @media screen and (min-width: 768px) {
     content: "";
     position: absolute;
     width: 50px;
     height: 50px;
-    left: calc(127px - 76px);
+    left: calc(127px - 76px + 15px);
     top: -82px;
   }
 
@@ -197,37 +198,6 @@
     top: -90px;
   }
 }
-
-
-/* .advantages-item-icon {
-  position: absolute;
-  left: 135px;
-  top: -65px;
-  background-color: #F8D24E;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-item-icon {
-    position: absolute;
-    left: calc(127px - 76px);
-    top: -82px;
-    background-color: #F8D24E;
-    border-radius: 50%;
-
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-item-icon {
-    position: absolute;
-    left: calc(175px - 16px);
-    top: -90px;
-    background-color: #F8D24E;
-    border-radius: 50%;
-  }
-} */
-
 
 .advantages-title {
   font-weight: 700;
@@ -249,7 +219,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-     font-size: 58px;
+    font-size: 58px;
     line-height: calc(71px / 58px);
     margin-bottom: 12px;
   }
