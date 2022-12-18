@@ -10,17 +10,28 @@
 }
 
 .footer-name {
-     @media screen and (min-width: 1200px) {
        margin-bottom: 60px;
+
+       @media screen and (min-width: 768px) {
+        margin-bottom: 0;
     }
+    
 }
 .footer-container-wrapper {
-   
+    padding-top: 60px;
+    padding-bottom: 40px;
+
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        
+        padding-top: 40px;
+        padding-bottom: 32px;
       }
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
 }
 .footer-doubletitel {
     font-family: $mainFont;
@@ -68,20 +79,18 @@
         font-size: 58px;
         line-height: calc(71 / 58);
         margin-top: 14px;
-        width: 500px;
+        width: 100%;
     }
  
 }
 .footer-contacts {
-    margin-top: 60px;
-    margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         margin-top: 65px;
-        margin-bottom: 60px;
+       
     }
     @media screen and (min-width: 1200px) {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
 }
@@ -121,6 +130,14 @@
 .footer-call {
     display: flex;
     justify-content: end;
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 34px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+    }
 }
 .footer-tel {
     display: block;
@@ -130,7 +147,6 @@
     font-weight: 700;
     font-size: 12px;
     line-height: calc(22 / 12);
-    margin-top: 20px;
     color: $lightTextColor;
 
     &:hover {
@@ -143,12 +159,10 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: calc(26 / 14);
-        margin-top: 34px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: calc(30 / 16);
-        margin-top: 40px;
     }
 }
 .tel-first-part {
@@ -158,18 +172,15 @@
     font-weight: 700;
     font-size: 12px;
     line-height: calc(22 / 12);
-    margin-top: 20px;
     color: $darkTextColor;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: calc(26 / 14);
-        margin-top: 34px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: calc(30 / 16);
-        margin-top: 40px;
     }
 }
 .footer-line {
@@ -182,7 +193,7 @@
 
     @media screen and (min-width: 768px) {
         margin-bottom: 12px;
-        margin-left: -33px;
+        margin-left: -32px;
         margin-right: -32px;
     
     }
