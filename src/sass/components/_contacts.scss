@@ -243,6 +243,14 @@
   padding-left: 28px;
   width: 284px;
   height: 678px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 698px;
+
+    // padding: 32px 60px;
+  
+  }
 }
 
 .modal-close {
@@ -267,10 +275,17 @@
   text-align: center;
 
   color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+margin: 0 auto;
+font-size: 20px;
+line-height: 140%;
+  
+  }
 }
 
 .applications-text {
-  width: 222px;
+  // width: 222px;
   font-family: $mainFont;
   font-weight: 400;
   font-size: 14px;
@@ -281,20 +296,41 @@
   margin-top: 20px;
 
   color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    // width: 440px;
+
+    margin-top: 24px;
+    
+
+    font-size: 16px;
+    line-height: 140%;
+      }
 }
 
 .applications-form {
   margin: 0 24px;
+  @media screen and (min-width: 768px) {
+  
+    margin: 0 32px;
+      }
+
 }
 
 .applications-form-item {
   position: relative;
   &:first-child {
     margin-top: 24px;
+    @media screen and (min-width: 768px) {
+  
+      margin-top: 32px;
+        }
   }
 
   &:not(:last-child) {
     margin-bottom: 12px;
+  
   }
 }
 
@@ -305,6 +341,11 @@
   border: 1px solid $mainBgColor;
   border-radius: 10px;
   padding: 8px 12px;
+
+  @media screen and (min-width: 768px) {
+  
+    width: 368px;
+  height: 42px;  }
 }
 
 .applications-form-textarea {
@@ -314,6 +355,11 @@
   border: 1px solid $mainBgColor;
   border-radius: 10px;
   padding: 8px 12px;
+  @media screen and (min-width: 768px) {
+  
+    width: 368px;
+    height: 84px;
+    }
 }
 
 .applications-btn {
@@ -331,6 +377,11 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+  
+    margin-top: 32px;
+      }
 }
 
 // Modal close //
