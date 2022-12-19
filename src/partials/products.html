@@ -110,8 +110,20 @@
   </ul>
 </div>
 </div>
-  <input class="modal-products-input" type="text" name="username" placeholder="Name">
-  <input class="modal-products-input" type="tel" name="telephone" placeholder="Phone">
+  <input 
+  class="modal-products-input" 
+  type="text" 
+  name="username" 
+  pattern="[A-Za-z]{2,10}" 
+  title="Username must contain uppercase and lowercase letters, from 2 to 10 characters in length"
+  placeholder="Name">
+  <input 
+  class="modal-products-input" 
+  type="tel" 
+  name="telephone" 
+  pattern="[0-9]{10,}"
+  title="The number must contain 10 digits"
+  placeholder="Phone">
   <textarea class="modal-products-message" name="comment" rows="4" placeholder="Comment"></textarea>
   <button type="submit" class="modal-products-btn">Submit</button>
 </form>

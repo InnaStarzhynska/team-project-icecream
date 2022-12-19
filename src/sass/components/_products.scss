@@ -546,6 +546,10 @@
     }
 }
 
+.modal-products-input:invalid {
+  border-color: red;
+}
+
 .modal-products-message {
   resize: none;
   margin-bottom: 26px;
