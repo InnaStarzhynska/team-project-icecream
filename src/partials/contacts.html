@@ -159,14 +159,22 @@
       </div>
     </div>
 
-    <button class="contacts-btn js-open-modal" type="button" data-modal="contacts-location">
+    <button
+      class="contacts-btn js-open-modal"
+      type="button"
+      data-modal="contacts-location"
+    >
       Our Locations
       <svg class="btn-icon" width="5" height="10">
         <use href=".\images\images-sprite.svg#icon-button-arrow"></use>
       </svg>
     </button>
 
-    <button class="contacts-btn js-open-modal inherit" type="button" data-modal="contacts-applications">
+    <button
+      class="contacts-btn js-open-modal inherit"
+      type="button"
+      data-modal="contacts-applications"
+    >
       Franchise
       <svg class="btn-icon" width="5" height="10">
         <use href=".\images\images-sprite.svg#icon-button-arrow"></use>
@@ -183,24 +191,28 @@
     </button>
     <p class="contacts-title">Our Locations</p>
 
-    <picture class="contacts-map">
+    <picture>
       <source
+        @media="(max-width:767px)"
         srcset="
           ./images/contacts-modal/mpsmall224x199@1x.jpg 1x,
           ./images/contacts-modal/mpsmall224x199@2x.jpg 2x
         "
         type="image/jpeg"
       />
+
       <source
+        media="(min-width:768px)"
         srcset="
           ./images/contacts-modal/mpbg448x260@1x.jpg 1x,
           ./images/contacts-modal/mpbg448x260@1x.jpg 2x
         "
         type="image/jpeg"
       />
+
       <img
         class="contacts-map"
-        src="./images/contacts-modal/mpsmall224x199@1x.jpg"
+        src="./images/contacts-modal/mpbg448x260@1x.jpg"
         alt="map"
       />
     </picture>
@@ -208,14 +220,14 @@
     <a
       class="contacts-link-map"
       href="https://www.google.com.ua/maps/@50.5922444,30.5963509,5z?hl=ru"
-      ><button type="submit" class="contacts-modal-button">Open map</button></a
+      >Open map</a
     >
   </div>
 
   <!-- Modal applications -->
 
   <div class="applications-modal modal" data-modal="contacts-applications">
-    <button type="button" class="modal-close js-modal-close"  >
+    <button type="button" class="modal-close js-modal-close">
       <svg class="applications-svg" width="12" height="12">
         <use href="./images/images-sprite.svg#icon-menu-close"></use>
       </svg>
@@ -236,41 +248,44 @@
           class="applications-form-input"
           type="text"
           name="user-name"
-          id="user-name"
-          placeholder=""
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
         />
-        <label class="applications-form-label" for="name">Name</label>
+        <!-- <label class="applications-form-label" for="name">Name</label> -->
       </li>
       <li class="applications-form-item">
         <input
           class="applications-form-input"
           type="tel"
           name="user-tel"
-          id="user-tel"
-          placeholder=" "
+          placeholder="Phone"
+          required
+          min="1"
+          max="13"
         />
-        <label class="applications-form-label" for="tel">Phone</label>
+        <!-- <label class="applications-form-label" for="tel">Phone</label> -->
       </li>
       <li class="applications-form-item">
         <input
           class="applications-form-input"
           type="email"
           name="user-mail"
-          id="user-mail"
-          placeholder=" "
+          placeholder="Email"
+          required
         />
-        <label class="applications-form-label" for="mail">Email</label>
+        <!-- <label class="applications-form-label" for="mail">Email</label> -->
       </li>
       <li class="applications-form-item">
         <textarea
           class="applications-form-textarea"
           name="user-comment"
-          id="user-comment"
-          placeholder=" "
+          placeholder="Comment"
         ></textarea>
-        <label class="applications-form-label" for="comment">Comment</label>
+        <!-- <label class="applications-form-label" for="comment">Comment</label> -->
       </li>
     </ul>
-    <button class="button applications-btn" type="submit">Submit</button>
+    <button class="applications-btn" type="submit">Submit</button>
   </div>
 </section>
