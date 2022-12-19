@@ -349,12 +349,23 @@
   bottom: 0;
   left: 83px;
 
+  // width: 177px;
+  // height: 217px;
+
   @media screen and (min-width: 768px) {
     left: 408px;
+
+    
+    // width: 268px;
+    // height: 329px;
+
   }
 
   @media screen and (min-width: 1200px) {
     left: 652px;
+
+    // width: 456px;
+    // height: 560px;
   }
 }
 
@@ -363,6 +374,7 @@
   position: absolute;
 
   @media screen and (min-width: 768px) {
+
     display: block;
     left: 32px;
     bottom: 12px;

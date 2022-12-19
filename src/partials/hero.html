@@ -1,45 +1,82 @@
 <section class="hero">
-    <div class="container hero-container">
-      <div class="hero-flex-box">
-        <div class="hero-main-block">
-          <h1 class="hero-title">
-            ice cream made with passion
-          </h1>
-          <ul class="hero-link-list">
-            <li><a class="hero-link-products" href="#products">Products</a></li>
-            <li><a class="hero-link-about" href="#about">How it’s made?</a></li>
-          </ul>
-        </div>
-        <ul class="hero-benefits">
-          <li class="hero-benefits-item">
-            <p class="hero-benefits-numbers">16</p>
-            <p class="hero-benefits-name">cafes</p>
-          </li>
-          <li class="hero-benefits-item">
-            <p class="hero-benefits-numbers">23</p>
-            <p class="hero-benefits-name">food trucks</p>
-          </li>
+  <div class="container hero-container">
+    <div class="hero-flex-box">
+      <div class="hero-main-block">
+        <h1 class="hero-title">ice cream made with passion</h1>
+        <ul class="hero-link-list">
+          <li><a class="hero-link-products" href="#products">Products</a></li>
+          <li><a class="hero-link-about" href="#about">How it’s made?</a></li>
         </ul>
       </div>
-      <!-- <div class="hero-text-box"> -->
-      <p class="hero-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-        <svg class="hero-text-arrow" width="40" height="16">
-          <use href="./images/images-sprite.svg#icon-white-arrow"></use>
-        </svg>
-      </p>
-      <!-- </div>  -->
-      <picture>
-        <sourse media="(min-width=1200px)" srcset="./images/hero/plate1lg.png 1x, ./images/hero/plate1@2xlg.png 2x" type="image/png" />
-        <source media="(min-width=768px)" srcset="./images/hero/plate1sm.png 1x, ./images/hero/plate1@2xsm.png 2x" type="image/png" />
-          <img class="hero-plate" src="./images/hero/plate1sm.png" alt="ice-cream plate">
-      </picture>
-      <picture >
-        <source media="(min-width=1200px)" srcset="./images/hero/desktopsmile1x.png 456w, ./images/hero/desktopsmile@2x.png" type="image/png" />
-        <source media="(min-width=768px)" scrset="./images/hero/tabletsmile1x.png 268w, ./images/hero/tabletsmile@2x.png"type="image/png" />
-      <source media="(max-width=767px)" scrset="./images/hero/mobilesmile1x.png 177w, ./images/hero/mobilesmile@2x.png" type="image/png"/>
-      <img class="hero-lot-ice" src="./images/hero/mobilesmile1x.png" alt="ice-cream-plate" />
-      </picture>
-</div>
-  </section>
+      <ul class="hero-benefits">
+        <li class="hero-benefits-item">
+          <p class="hero-benefits-numbers">16</p>
+          <p class="hero-benefits-name">cafes</p>
+        </li>
+        <li class="hero-benefits-item">
+          <p class="hero-benefits-numbers">23</p>
+          <p class="hero-benefits-name">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="hero-text-box"> -->
+    <p class="hero-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+      <svg class="hero-text-arrow" width="40" height="16">
+        <use href="./images/images-sprite.svg#icon-white-arrow"></use>
+      </svg>
+    </p>
+    <!-- </div>  -->
+
+    <picture>
+      <source
+        media="(min-width:1200px )"
+        srcset="./images/hero/plate1lg.png 1x, ./images/hero/plate1@2xlg.png 2x"
+        type="image/png"
+      />
+      <source
+        media="(min-width:768px )"
+        srcset="./images/hero/plate1sm.png 1x, ./images/hero/plate1@2xsm.png 2x"
+        type="image/png"
+      />
+
+      <img
+        class="hero-plate"
+        src="./images/hero/plate1sm.png"
+        alt="ice-cream plate"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width:1200px)"
+        srcset="
+          ./images/hero/desktopsmile1x.png  1x,
+          ./images/hero/desktopsmile@2x.png 2x
+        "
+        type="image/png"
+      />
+
+  
+      <source
+        media="(min-width:768px )"
+        srcset="
+          ./images/hero/tabletsmile1x.png  1x,
+          ./images/hero/tabletsmile@2x.png 2x
+        "
+        type="image/png"
+      />
+
+   
+
+      <source media="(max-width:767px )" srcset="./images/hero/mobilesmile1x.png 1x , 
+      ./images/hero/mobilesmile@2x.png 2x" type="image/png"/>
+
+      <img
+        class="hero-lot-ice"
+        src="./images/hero/mobilesmile1x.png"
+        alt="ice-cream-plate"
+      />
+    </picture>
+  </div>
+</section>
