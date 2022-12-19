@@ -63,6 +63,8 @@
 }
 
 .products-item {
+  display: flex;
+  flex-direction: column;
   height: 420px;
   border-radius: 24px;
   padding: 123px 40px 0 40px;
@@ -292,18 +294,25 @@
 }
 
 .products-button {
-  display: inline-block;
-  background-color: inherit;
-  border: none;
+  display: block;
+  margin-top: auto;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 16px;
+  padding: 5px 15px;
+  background-color: inherit;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 60px;
+        }
 }
 
 .products-button-icon {
-  position: absolute;
-  top: 388px;
-  left: 120px;
-  cursor: pointer;
   fill: $darkTextColor;
   outline: transparent;
   transition: fill $transition;
