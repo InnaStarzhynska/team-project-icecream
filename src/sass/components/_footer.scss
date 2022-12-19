@@ -114,6 +114,8 @@
     background-color: $defaultBtnBgColor;
     border-radius: 50%;
 
+    transition: fill $transition;
+
     &:hover {
         fill: $secondaryBgColor;
     }
@@ -140,7 +142,7 @@
     }
 }
 .footer-tel {
-    display: block;
+    // display: block;
     text-decoration: none;
     font-family: $mainFont;
     font-style: normal;
@@ -148,7 +150,8 @@
     font-size: 12px;
     line-height: calc(22 / 12);
     color: $lightTextColor;
-
+    transition: color $transition;
+    
     &:hover {
         color: $accentTextColor;
     }
