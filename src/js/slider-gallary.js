@@ -11,3 +11,11 @@ var swiper = new Swiper(".mySwiper", {
     delay: 1000,
   },
 });
+
+
+
+
+
+
+
+
