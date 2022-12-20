@@ -9,13 +9,12 @@
 
 .header .container{
     display: flex;
-    @media screen and (max-width: 767px) {
-        padding-top: 12px;
-        padding-bottom: 50px;
-    }
-    @media screen and (max-width: 1199px) {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    
+    @media screen and (min-width: 768px) {
         padding-top: 20px;
-        padding-bottom: 16px;
         justify-content: space-between;
     }
     @media screen and (min-width: 1200px) {
@@ -24,7 +23,6 @@
         align-items: center;
     }
 }
-
 
 .logo{
     @media screen and (min-width: 1200px) {

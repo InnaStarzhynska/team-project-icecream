@@ -1,13 +1,17 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  loop: true,
-  spaceBetween: 31,
-  freeMode: true,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
-  autoplay: {
-    delay: 1000,
-  },
+$(document).ready(function(){ 
+  $('.slider').slick({ 
+      arrows: false, 
+  dots: false, 
+  adapptiveHeight: true, 
+  slidesToShow: 1, 
+  slidesToScroll: 1, 
+    speed: 2000, 
+   fade: true,  
+  easing: "linear", 
+  infinite: true, 
+  autoplay: true, 
+  autoplaySpeed: 1000, 
+  pauseOnFocus: true, 
+  pauseOnHover: true 
+  }); 
 });
