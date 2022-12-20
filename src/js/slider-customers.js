@@ -1,7 +1,7 @@
 $(".customer_slider").slick({
   dots: true,
   infinite: true,
-  speed: 2000,
+  speed: 1000,
   slidesToShow: 1,
   arrows: false,
   autoplay: true,

@@ -1,3 +1,4 @@
+ 
  .customer {
    width: 100%;
  }
@@ -26,9 +27,7 @@
    align-items: center;
 
    padding: 35px 39px;
-   margin-left: 10px;
-   margin-right: 10px;
-   margin-bottom: 32px;
+
    border-radius: 24px;
    background-color: #84A178;
    color: #FCFCFC;
@@ -61,57 +60,39 @@
 
 
  .customer_client {
-   margin-bottom: 32px;
+
+   padding-top: 32px;
    text-align: center;
-   font-size: 16px;
+   font-size: 20px;
    font-weight: 500;
    line-height: 1.86;
 
    color: #131313;
-
-   @media screen and (min-width: 768px) {
-     margin-bottom: 80px;
-
-
-   }
-
-   @media screen and (min-width: 1200px) {
-
-     margin-bottom: 100px;
-
-
-
-
-   }
  }
 
-
+ /* сладер */
 
  .slider {
    min-width: 0;
  }
 
- .content {
+ /*.content {
    margin: auto;
-   padding: 10px;
+   padding: 0px -10px;
    width: 100%;
    max-width: 1008px;
    box-sizing: border-box;
 
    /*@media screen and (min-width: 768px) {
-    min-width: 705px;
+    max-width: 705px;
 
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 968px;
+    max-width: 968px;
     
-
-
-
-
-  }*/
- }
+  }
+ }*/
 
  .customer_title {
    justify-content: center;
@@ -131,6 +112,7 @@
    display: flex;
    align-items: flex-start;
    width: 200px;
+
  }
 
  .customer_slider {
@@ -181,4 +163,8 @@
  .customer_slider .slick-dots li.slick-active button {
    background-color: #84A178;
 
+ }
+
+ .customer_slider .slick-slide {
+   padding: 0px 10px;
  }
