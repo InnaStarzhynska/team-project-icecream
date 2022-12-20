@@ -1,44 +1,130 @@
 <section class="about">
   <div class="container">
-    <p class="main-text-one">tradition and love</p>
-    <h2 class="main-text">how it’s made?</h2>
+    <p class="about-main-text-one">tradition and love</p>
+    <h2 class="about-main-text">how it’s made?</h2>
 
-    <div class="block">
-      <!-- <img  class="image" src="./images/about/cow@2x.png" alt="image"> -->
-      <img class="image" src="./images/about/michael.png" alt="image" />
+    <div class="about-block">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/cow-desk@1x.webp 1x,
+            ./images/about/cow-desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/cow-desk@1x.png 1x,
+            ./images/about/cow-desk@2x.png 2x
+          "
+          type="image/png"
+        />
 
-      <div class="block-second">
-        <ul data-aos="fade-left" class="list">
-          <li class="">
-            <p class="text">
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about/cow-tabl@1x.webp 1x,
+            ./images/about/cow-tabl@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about/cow-tabl@1x.png 1x,
+            ./images/about/cow-tabl@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 420px)"
+          srcset="
+            ./images/about/cow-mob@1x.webp 1x,
+            ./images/about/cow-mob@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 420px)"
+          srcset="
+            ./images/about/cow-mob@1x.png 1x,
+            ./images/about/cow-mob@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <img
+          class="about-image"
+          src="./images/about/cow-desk@1x.png"
+          alt="cow"
+        />
+      </picture>
+
+      <div class="about-block-second">
+        <ul class="about-list">
+          <li>
+            <p class="about-text">
               Ice is a place where you will become not only a little happier,
               but also healthier. Health is the main value for us, and we follow
               it when creating our handmade desserts.
             </p>
           </li>
-          <li class="">
-            <p class="text-one">
+          <li>
+            <p class="about-text-one">
               We use traditional recipes and 100% natural ingredients. Our
               products are so natural that they can be given to children from
               the age of three years. Sweets lovers can expect 55 types of ice
               cream, 15 types of coffee and 23 milkshakes.
             </p>
           </li>
-          <li class="">
-            <p class="text-two">
+          <li>
+            <p class="about-text-two">
               This is enough to choose ice cream and coffee for any mood!
             </p>
           </li>
         </ul>
 
-        <button class="button" type="button">
-          <span class="button-text">Read more</span>
+        <button
+          class="about-button js-open-modal"
+          type="button"
+          data-modal="10"
+        >
+          <span class="about-button-text">Read more</span>
 
-          <svg class="button-svg" width="12" height="12 ">
+          <svg class="about-button-svg" width="12" height="12 ">
             <use href="./images/images-sprite.svg#icon-button-arrow"></use>
           </svg>
         </button>
       </div>
     </div>
   </div>
+
+  <div class="modal" data-modal="10">
+    <!--   Svg иконка для закрытия окна  -->
+
+    <svg class="modal__cross js-modal-close" width="12" height="12">
+      <use href="./images/images-sprite.svg#icon-menu-close"></use>
+    </svg>
+    <h3 class="about__modal-title">How it’s made?</h3>
+
+    <iframe
+      class="about-video"
+      src="https://www.youtube.com/embed/rRPQs_kM_nw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p class="about__modal-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+
+  <!-- Подложка под модальным окном -->
+  <div class="overlay js-overlay-modal"></div>
 </section>

@@ -1,5 +1,5 @@
 .gallery{
-    margin: 0 auto;
+    
     padding-bottom: 80px;
     background-image: linear-gradient(to bottom,
                 $mainBgColor 23%,
@@ -12,9 +12,54 @@
       
     
    .gallery-box{
+    
+    .customer_slider .slick-dots button {
+            display: none;
+        }
    
+           .slick-track {
+               display: flex;
+               align-items: flex-start;
+            
+            
+            
+           }
+    
+           .customer_slider {
+               position: relative;
+              
+           }
+    
+           .customer_slider .slick-arrow {
+               position: absolute;
+               top: 50%;
+               margin: -50px 0px 0px 0px;
+               z-index: 10;
+               font-size: 0;
+              
+           }
+
+                        .customer_slider .slick-arrow.slick-prev {
+                            left: 0;
+                        }
+            
+                        .customer_slider .slick-arrow.slick-next {
+                            right: 0;
+                        }
+
+                        
+
+               
 @media screen and (min-width: 1200px) {
         padding-left: 93px;
         padding-right: 94px;
+
+      
+            
+      
+        
 }}
- 
+
+picture {
+    min-height: 100%;
+}

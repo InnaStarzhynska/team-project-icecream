@@ -7,251 +7,390 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
 
-  .main-text-one {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(22 / 18);
+.about-main-text-one {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
 
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: $secondaryBgColor;
+  color: $secondaryBgColor;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    @media screen and (min-width: 768px) {
-      font-weight: 800;
-      font-size: 22px;
-      line-height: calc(27 / 22);
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 30px;
-      line-height: calc(37 / 30);
-    }
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
   }
 
-  .main-text {
-    font-family: $titleFont;
-    font-style: normal;
-    font-weight: 400;
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
-    line-height: calc(38 / 30);
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    line-height: calc(37 / 30);
+  }
+}
 
-    color: $secondaryBgColor;
+.about-main-text {
+  font-family: $titleFont;
 
-    padding-bottom: 54px;
+  font-size: 30px;
+  line-height: calc(38 / 30);
 
-    @media screen and (min-width: 768px) {
-      padding-bottom: 80px;
-      font-size: 34px;
-      line-height: calc(43 / 34);
-      /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-      letter-spacing: 0.06em;
+  color: $secondaryBgColor;
 
-      padding-bottom: 80px;
-    }
+  margin-bottom: 54px;
 
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 121px;
-      font-size: 36px;
-      line-height: calc(45 / 36);
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
   }
 
-  .block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    @media screen and (min-width: 1200px) {
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 121px;
+    font-size: 36px;
+    line-height: calc(45 / 36);
   }
+}
 
-  .image {
-    width: 279px;
-    height: 279px;
+.about-block {
+  display: flex;
 
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px -22px #ebd686;
-    border-radius: 250px;
+  flex-direction: column;
+  align-items: center;
 
-    margin: 0 auto;
-
-    @media screen and (min-width: 768px) {
-      width: 330px;
-      height: 330px;
-      box-shadow: 0px -26px #ebd686;
-      margin-top: 12px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 490px;
-      height: auto;
-      box-shadow: 0px -39px #ebd686;
-    }
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-    padding: 0;
-
-    gap: 4px;
-
-    margin-top: 40px;
-    margin: 40px 50px 0 50px;
-
-    @media screen and (min-width: 768px) {
-      gap: 8px;
-
-      margin: 0px 2px 0 38px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-left: 109px;
-      margin-top: 58px;
-      margin-right: 85px;
-      margin-bottom: 0;
-    }
-  }
-
-  .text {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 176%;
-
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: $secondaryBgColor;
-
-    @media screen and (min-width: 768px) {
-      text-align: start;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
-      line-height: 176%;
-    }
-  }
-
-  .text-one {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
-
-    text-align: center;
-
-    color: $secondaryBgColor;
-
-    @media screen and (min-width: 768px) {
-      font-size: 12px;
-      line-height: 176%;
-      letter-spacing: 0.04em;
-      text-align: start;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 194%;
-    }
-  }
-
-  .text-two {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-      font-family: $mainFont;
-      font-size: 12px;
-      line-height: 194%;
-      letter-spacing: 0.04em;
-      text-align: start;
-      font-style: normal;
-      font-weight: 400;
-
-      color: $secondaryBgColor;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 194%;
-    }
-  }
-
-  .button {
-    margin: 0 auto;
-    margin-top: 10px;
-
-    width: 164px;
-    height: 42px;
-    background-color: $defaultBtnBgColor;
-    color: #000000;
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-      margin-left: 36px;
-      margin-top: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-left: 109px;
-      margin-top: 54px;
-    }
+    align-items: flex-start;
   }
-  .button:hover {
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.about-image {
+  width: 279px;
+  height: 279px;
+
+  max-width: none;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px -22px #ebd686;
+  border-radius: 250px;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    height: 330px;
+    box-shadow: 0px -26px #ebd686;
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    box-shadow: 0px -39px #ebd686;
+  }
+}
+
+ul.about-list {
+  display: flex;
+
+  flex-direction: column;
+  align-items: stretch;
+
+  margin: 0;
+
+  gap: 4px;
+
+  padding-top: 40px;
+  padding: 40px 30px 0 30px;
+
+  @media screen and (min-width: 768px) {
+    gap: 8px;
+
+    padding: 0px 2px 0 38px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 109px;
+    padding-top: 58px;
+    padding-right: 85px;
+    padding-bottom: 0;
+  }
+}
+
+.about-text {
+  font-family: $mainFont;
+
+  font-size: 12px;
+  line-height: 176%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $secondaryBgColor;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.about-text-one {
+  font-family: $mainFont;
+
+  font-size: 12px;
+  line-height: 162%;
+
+  text-align: center;
+
+  color: $secondaryBgColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+
+.about-text-two {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    font-family: $mainFont;
+    display: block;
+
+    font-size: 12px;
+    line-height: 194%;
+
+    letter-spacing: 0.04em;
+
+    text-align: start;
+    font-style: normal;
+
+    color: $secondaryBgColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+
+.about-button {
+  margin: 0 auto;
+  margin-top: 10px;
+
+  width: 164px;
+  height: 42px;
+
+  background-color: $defaultBtnBgColor;
+  color: $darkTextColor;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: $transition;
+
+  &:hover {
     background-color: $hoverFocusBtnBgColor;
     color: $buttonTextColor;
   }
-  .button:focus {
+  &:focus {
     background-color: $hoverFocusBtnBgColor;
     color: $secondaryBgColor;
     fill: $secondaryBgColor;
   }
-  .button:disabled {
+  &:disabled {
     background-color: $disabledBtnBgColor;
   }
 
-  .button-text {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 129%;
+  @media screen and (min-width: 768px) {
+    margin-left: 36px;
+    margin-top: 32px;
+  }
 
-    margin-right: 7px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 109px;
+    margin-top: 54px;
+  }
+}
+
+.about-button-text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+
+  margin-right: 7px;
+}
+
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+
+  transition: $transition;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+  width: 280px;
+  height: auto;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 28px;
+  border-radius: 10px;
+  border: 2px solid $accentTextColor;
+  background-color: $lightTextColor;
+  transition: $transition;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 449px;
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  top: 16px;
+  right: 16px;
+
+  fill: $darkTextColor;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    top: 17px;
+    right: 17px;
+  }
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.about__modal-title {
+  font-family: $titleFont;
+
+  font-size: 16px;
+  line-height: 150%;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.about-video {
+  width: 224px;
+  height: 199px;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
+}
+
+.about__modal-text {
+  font-family: $mainFont;
+
+  font-size: 14px;
+  line-height: 140%;
+
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
   }
 }

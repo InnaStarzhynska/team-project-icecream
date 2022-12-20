@@ -1,6 +1,32 @@
 .hero {
+  background-color: $mainBgColor;
   min-width: 320px;
-  background: #84A278;
+
+  @media screen and (max-width:480px) {
+    padding-top: 74px;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width:320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1200px;
+  }
 }
 
 .hero-container {
@@ -37,15 +63,15 @@
 }
 
 .hero-title {
-  font-family: 'Seymour One';
+  font-family: $titleFont;
   font-weight: 400;
   font-size: 26px;
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #FCFCFC;
   max-width: 247px;
   margin-bottom: 32px;
+  color: $lightTextColor;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -88,7 +114,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: $darkTextColor;
   text-decoration: none;
   list-style: none;
 
@@ -110,7 +136,7 @@
 .hero-item-text {
   font-weight: 400;
   text-align: right;
-  color: #FCFCFC;
+  color: $lightTextColor;
 
   .hero-picture {
     display: none;
@@ -147,54 +173,75 @@
   }
 }
 
-.hero-btn {
+.hero-link-products {
+  @extend %link;
+  padding: 11px 24px;
+  cursor: pointer;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
   display: flex;
   align-items: center;
   text-align: center;
-  color: #000000;
-  border: 2px solid #F8D24E;
+  color: $buttonTextColor;
+  border: 2px solid $accentTextColor;
   border-radius: 8px;
-  background-color: #84A278;
-  padding: 11px 26px;
-  min-width: 108px;
-  max-height: 38px;
-  margin-right: 34px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  transition: color $transition;
 
-  @media screen and (min-width: 1200px) {
-    min-width: 134px;
-    max-height: 42px;
-    padding: 12px 34px;
+  &:hover {
+    border-color: $hoverFocusBtnBgColor;
   }
 
-  &:hover,
   &:focus {
-    background-color: #F8D24E;
+    border-color: $hoverFocusBtnBgColor;
+
+    @media screen and (min-width: 1200px) {
+      color: $secondaryBgColor;
+    }
+  }
+
+  &:disabled {
+    border-color: $disabledBtnBgColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 32px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-radius: 10px;
   }
 }
 
-.hero-link {
-  display: flex;
+.hero-link-about {
+  cursor: pointer;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
   align-items: center;
   text-align: center;
-  text-decoration-line: underline;
-  color: #F8D24E;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: underline;
+  color: $accentTextColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+  &:hover {
+    color: $hoverFocusBtnBgColor ;
+  }
+
   &:focus {
-    color: #000000;
+    color: $secondaryBgColor;
+  }
+
+  &:disabled {
+    color: $disabledBtnBgColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 114px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
   }
 }
 
@@ -220,7 +267,7 @@
 
 .hero-benefits-numbers {
   margin-bottom: 4px;
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
@@ -228,7 +275,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: $darkTextColor;
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -237,7 +284,7 @@
 }
 
 .hero-benefits-name {
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -251,15 +298,29 @@
   }
 }
 
+.hero-text-box {
+  max-width: 139px;
+  margin-left: 184px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 201px;
+    margin-left: 241px;
+  }
+}
+
 .hero-text {
   max-width: 139px;
   margin-left: 184px;
-  font-family: 'Montserrat';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(17 / 12);
-  color: #FCFCFC;
+  color: $lightTextColor;
 
   @media screen and (max-width: 767.98px) {
     display: none;
@@ -276,7 +337,7 @@
 .hero-text-arrow {
   display: block;
   margin-top: 12px;
-  fill: #FCFCFC;
+  fill: $lightTextColor;
 
   @media screen and (min-width: 1200px) {
     margin-top: 24px;
@@ -288,12 +349,23 @@
   bottom: 0;
   left: 83px;
 
+  // width: 177px;
+  // height: 217px;
+
   @media screen and (min-width: 768px) {
     left: 408px;
+
+    
+    // width: 268px;
+    // height: 329px;
+
   }
 
   @media screen and (min-width: 1200px) {
     left: 652px;
+
+    // width: 456px;
+    // height: 560px;
   }
 }
 
@@ -302,6 +374,7 @@
   position: absolute;
 
   @media screen and (min-width: 768px) {
+
     display: block;
     left: 32px;
     bottom: 12px;

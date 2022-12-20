@@ -9,7 +9,7 @@
 // SECTION //
 
 .contacts {
-  margin-top: 40px;
+  padding-top: 40px;
   background-image: linear-gradient(
     to top,
     $mainBgColor 75%,
@@ -43,6 +43,11 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 537px;
+  }
+
   &:last-of-type {
     margin-bottom: 20px;
   }
@@ -73,7 +78,7 @@
   margin-top: 20px;
 }
 
-.contacts-map {
+.contacts-maps {
   @extend %link;
   font-weight: 500;
   line-height: calc(22 / 12);
@@ -90,7 +95,7 @@
   line-height: calc(22 / 12);
 }
 
-.margin-day {
+.contacts-margin-day {
   margin-top: 8px;
 }
 
@@ -118,7 +123,7 @@
   text-align: center;
 }
 
-.btn {
+.contacts-btn {
   @extend %button;
   background-color: $accentTextColor;
   width: 196px;
@@ -169,7 +174,225 @@
   $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:focus .btn-icon {
+.contacts-btn:focus .btn-icon {
   fill: #ffffff;
   $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Modal Location //
+
+.contacts-modal {
+  width: 284px;
+  height: 369px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 458px;
+  }
+}
+
+.contacts-title {
+  font-family: $titleFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  margin-bottom: 20px;
+
+  align-items: center;
+  text-align: center;
+
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-map {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    width: 448px;
+    height: 260px;
+  }
+}
+
+.contacts-link-map {
+  @extend %link;
+  display: inline-block;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  padding: 12px 34px;
+  border-color: transparent;
+
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: $darkTextColor;
+}
+
+// Modal applications //
+
+.applications-modal {
+  padding-left: 28px;
+  width: 284px;
+  height: 678px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 698px;
+
+    // padding: 32px 60px;
+  
+  }
+}
+
+.modal-close {
+  fill: #131313;
+  height: 41px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+
+.applications-title {
+  width: 221px;
+  font-family: $titleFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  align-items: center;
+  text-align: center;
+
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+margin: 0 auto;
+font-size: 20px;
+line-height: 140%;
+  
+  }
+}
+
+.applications-text {
+  // width: 222px;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+
+  align-items: center;
+  text-align: left;
+  margin-top: 20px;
+
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    // width: 440px;
+
+    margin-top: 24px;
+    
+
+    font-size: 16px;
+    line-height: 140%;
+      }
+}
+
+.applications-form {
+  margin: 0 24px;
+  @media screen and (min-width: 768px) {
+  
+    margin: 0 32px;
+      }
+
+}
+
+.applications-form-item {
+  position: relative;
+  &:first-child {
+    margin-top: 24px;
+    @media screen and (min-width: 768px) {
+  
+      margin-top: 32px;
+        }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  
+  }
+}
+
+.applications-form-input {
+  width: 224px;
+  height: 32px;
+  background: $formInputBgColor;
+  border: 1px solid $mainBgColor;
+  border-radius: 10px;
+  padding: 8px 12px;
+
+  @media screen and (min-width: 768px) {
+  
+    width: 368px;
+  height: 42px;  }
+}
+
+.applications-form-textarea {
+  width: 224px;
+  height: 64px;
+  background: $formInputBgColor;
+  border: 1px solid $mainBgColor;
+  border-radius: 10px;
+  padding: 8px 12px;
+  @media screen and (min-width: 768px) {
+  
+    width: 368px;
+    height: 84px;
+    }
+}
+
+.applications-btn {
+  text-align: center;
+  align-items: center;
+  background-color: $accentTextColor;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin: 0 55px;
+  margin-top: 24px;
+  border-color: transparent;
+
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: $darkTextColor;
+
+  @media screen and (min-width: 768px) {
+  
+    margin-top: 32px;
+      }
+}
+
+// Modal close //
+
+.modal-close {
+  fill: #131313;
+  height: 41px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  right: 15px;
 }

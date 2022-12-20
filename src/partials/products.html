@@ -2,6 +2,7 @@
   <div class="container">
     <p class="products-subtitle">100% natural</p>
     <h2 class="products-title">products</h2>
+
     <ul class="products-list">
     <!-- ICE CREAM -->
       <li class="products-item ice-cream">
@@ -47,7 +48,7 @@
   </div>
 
   <!-- MODAL WINDOW -->
-  <div class="modal" data-modal="p">
+  <div class="products-modal modal" data-modal="p">
     <svg class="products-modal-close js-modal-close">
       <use href="./images/images-sprite.svg#icon-menu-close"></use>
     </svg>
@@ -57,7 +58,7 @@
 <h2 class="modal-products-title">Chocolate icecream</h2>
 
 <div class="modal-products-background">
-  <img class="modal-products-img" src="#" alt="" width="" height="">
+  <img class="modal-products-img" src="#" alt="" width="132" height="132">
 </div>
 
 <ul class="modal-products-components">
@@ -87,8 +88,6 @@
   </li>
 </ul>
 
-
-
 <h3 class="modal-products-subtitle">Ingredients</h3>
 
 <div class="modal-products-wrapper">
@@ -111,18 +110,21 @@
   </ul>
 </div>
 </div>
-
-<div class="modal-products-field">
-  <input class="modal-products-input" type="text" name="username" placeholder="Name">
-</div>
-<div class="modal-products-field">
-  <input class="modal-products-input" type="tel" name="telephone" placeholder="Phone">
-</div>
-<div class="modal-products-field">
+  <input 
+  class="modal-products-input" 
+  type="text" 
+  name="username" 
+  pattern="[A-Za-z]{2,10}" 
+  title="Username must contain uppercase and lowercase letters, from 2 to 10 characters in length"
+  placeholder="Name">
+  <input 
+  class="modal-products-input" 
+  type="tel" 
+  name="telephone" 
+  pattern="[0-9]{10,}"
+  title="The number must contain 10 digits"
+  placeholder="Phone">
   <textarea class="modal-products-message" name="comment" rows="4" placeholder="Comment"></textarea>
   <button type="submit" class="modal-products-btn">Submit</button>
-</div>
 </form>
-  </div>
-
 </section>
