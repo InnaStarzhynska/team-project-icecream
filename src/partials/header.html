@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
     <img
       class="logo"
@@ -21,13 +21,13 @@
           <a href="" class="site-nav-list-link">Home</a>
         </li>
         <li class="site-nav-list-item">
-          <a href="" class="site-nav-list-link">How it’s made?</a>
+          <a href="#about" class="site-nav-list-link">How it’s made?</a>
         </li>
         <li class="site-nav-list-item">
-          <a href="" class="site-nav-list-link">Our products</a>
+          <a href="#products" class="site-nav-list-link">Our products</a>
         </li>
         <li class="site-nav-list-item">
-          <a href="" class="site-nav-list-link">Contact</a>
+          <a href="#contacts" class="site-nav-list-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -70,16 +70,16 @@
       <nav class="mobile-menu-site-nav">
         <ul class="mobile-menu-site-nav-list">
           <li class="mobile-menu-item">
-            <a href="" class="mobile-menu-link">Home</a>
+            <a href="#header" class="mobile-menu-link">Home</a>
           </li>
           <li class="mobile-menu-item">
-            <a href="" class="mobile-menu-link">How it’s made?</a>
+            <a href="#about" class="mobile-menu-link">How it’s made?</a>
           </li>
           <li class="mobile-menu-item">
-            <a href="" class="mobile-menu-link">Our products</a>
+            <a href="#products" class="mobile-menu-link">Our products</a>
           </li>
           <li class="mobile-menu-item">
-            <a href="" class="mobile-menu-link">Contact</a>
+            <a href="#contacts" class="mobile-menu-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -144,6 +144,8 @@
         name="name"
         class="modal-form-input"
         placeholder="Name"
+        pattern="[A-Za-z]{2,10}" 
+        title="Username must contain uppercase and lowercase letters, from 2 to 10 characters in length"
       />
     </label>
     <label class="buy-modal-field">
@@ -152,6 +154,8 @@
         name="telefone"
         class="modal-form-input"
         placeholder="Phone"
+        pattern="[0-9]{10,}"
+        title="The number must contain 10 digits"
       />
     </label>
     <label>
