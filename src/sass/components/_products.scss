@@ -315,20 +315,14 @@
 .products-button-icon {
   fill: $darkTextColor;
   transition: fill $transition;
+  cursor: pointer;
   .products-button:hover &,
   .products-button:focus & {
-    fill: #ffffff;
+    // fill: #ffffff;
+    // fill: #057727;
+    fill: #298b27;
+    transform: scale(1.5);
     }
-
-  @media screen and (min-width: 768px) {
-    top: 400px;
-    left: 92px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    top: 460px;
-    left: 165px;
-  }
 }
 
 /* === MODAL WINDOW ===*/
