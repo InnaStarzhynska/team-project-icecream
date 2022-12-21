@@ -1,6 +1,7 @@
  
  .customer {
-   width: 100%;
+  padding-bottom: 40px;
+
  }
 
  .customer_client-photo {
@@ -45,9 +46,11 @@
    }
 
    @media screen and (min-width: 1200px) {
-
+    width: 968px;
      padding: 43px 109px;
-
+     margin-left: auto;
+     margin-right: auto;
+     
      font-size: 16px;
      font-weight: 500;
      line-height: 1.86;
