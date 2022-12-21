@@ -314,13 +314,12 @@
 
 .products-button-icon {
   fill: $darkTextColor;
-  transition: fill $transition;
+  transform: scale(1);
+  transition: fill $transition, transform $transition;
   cursor: pointer;
   .products-button:hover &,
   .products-button:focus & {
-    // fill: #ffffff;
-    // fill: #057727;
-    fill: #298b27;
+    fill: #045f27;
     transform: scale(1.5);
     }
 }
