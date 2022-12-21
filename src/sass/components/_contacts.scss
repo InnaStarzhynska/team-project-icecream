@@ -15,17 +15,19 @@ ul.contacs-list {
   @media screen and (min-width:768px) {
     display: flex;
     gap: 16px;
+    padding-bottom: 40px;
   }
 
     @media screen and (min-width:1200px) {
       gap: 32px;
+      padding-bottom: 60px;
     }
 }
 
 .absolute-element {
   @media screen and (max-width: 767px) {
     position: absolute;
-    top: -353;
+    top: -361px;
   }
 }
 
@@ -72,14 +74,6 @@ ul.contacs-list {
 
 }
 }
-  .contacts {
-    padding-bottom: 60px;
-    background-color: $mainBgColor;
-
-    @media screen and (max-width: 767px) {
-      margin-top: 393px;
-    }
-  }
 
   ul.contacs-list {
     position: relative;
@@ -206,13 +200,11 @@ ul.contacs-list {
         margin-bottom: 16px;
       }
     }
-
         @media screen and (min-width: 768px) {
           &:not(:last-child) {
-            margin-left: 16px;
+            margin-right: 16px;
           }
         }
-
   }
 
   .contacs-button {
