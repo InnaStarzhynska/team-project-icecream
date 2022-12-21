@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-  $('.slider').slick({ 
+  $('.slider-gallary').slick({ 
       arrows: false, 
   dots: false, 
   adapptiveHeight: true, 
@@ -7,10 +7,10 @@ $(document).ready(function(){
   slidesToScroll: 1, 
     speed: 2000, 
    fade: true,  
-  easing: "linear", 
+  easing: "ease-in", 
   infinite: true, 
   autoplay: true, 
-  autoplaySpeed: 1000, 
+  autoplaySpeed: 3000, 
   pauseOnFocus: true, 
   pauseOnHover: true 
   }); 

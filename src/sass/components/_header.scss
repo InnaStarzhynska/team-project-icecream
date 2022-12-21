@@ -288,6 +288,10 @@
     }
 }
 
+.modal-form-input:invalid {
+    border-color: red;
+}
+
 .buy-modal-checkbox-none{
     -webkit-appearance: none;
     -moz-appearance: none;
