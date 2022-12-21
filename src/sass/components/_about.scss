@@ -227,6 +227,11 @@ ul.about-list {
 
   transition: $transition;
 
+transition-delay:none;
+transition-duration:250ms;
+transition-property:none;
+transition-timing-function:250ms;
+
   &:hover {
     background-color: $hoverFocusBtnBgColor;
     color: $buttonTextColor;
