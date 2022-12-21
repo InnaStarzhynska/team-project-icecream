@@ -1,183 +1,183 @@
-// BORDER //
-
-.contacts-line {
-  margin: 24px 0;
-  width: 216px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-// SECTION //
-
 .contacts {
-  padding-top: 40px;
-  background-image: linear-gradient(
-    to top,
-    $mainBgColor 75%,
-    rgba(0, 0, 0, 0) 25%
-  );
+  padding-bottom: 60px;
+  background-color: $mainBgColor;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 80px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 100px;
+  @media screen and (max-width: 767px) {
+    margin-top: 393px;
   }
 }
 
-.contacts-container {
-  @media screen and (min-width: 768px) {
+ul.contacs-list {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 69px;
+
+  @media screen and (min-width:768px) {
     display: flex;
+    gap: 16px;
+  }
+
+    @media screen and (min-width:1200px) {
+      gap: 32px;
+    }
+}
+
+.absolute-element {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: -353;
   }
 }
 
-// PART SECTION //
-
-.contacts-block {
+.contacs-list-item {
   width: 280px;
-  height: 412px;
-  margin: auto;
-  margin-bottom: 16px;
-  padding-left: 32px;
-  background: $lightTextColor;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 40px 32px 24px;
+  background-color: $secondaryBgColor;
   border-radius: 24px;
 
-  @media screen and (min-width: 768px) {
-    width: 224px;
-    height: 537px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+      }
   }
 
-  &:last-of-type {
-    margin-bottom: 20px;
-  }
+    @media screen and (min-width:768px) {
+      flex-basis: calc((100% - 32px) / 3);
+      padding: 40px 24px;
+    }
+    
+        @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 64px) / 3);
+        padding: 40px;
+        }
 }
 
-// CITY //
-
-.contacts-food {
+.contacs-type {
   display: inline-block;
-  align-items: center;
-  text-align: center;
-  margin-top: 40px;
-  padding: 4px 22px;
   border-radius: 4px;
-
-  font-family: $mainFont;
-  font-weight: 500;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.04em;
-
+  padding: 4px 22px;
+  margin-bottom: 20px;
   background-color: $accentTextColor;
-}
-
-.contacts-text {
   font-weight: 500;
-  line-height: calc(22 / 12);
-  letter-spacing: 0.04em;
-  margin-top: 20px;
+  font-size: 12px;
 }
+  .contacts {
+    padding-bottom: 60px;
+    background-color: $mainBgColor;
 
-.contacts-maps {
-  @extend %link;
-  font-weight: 500;
-  line-height: calc(22 / 12);
-  letter-spacing: 0.04em;
-  margin-top: 8px;
-
-  color: $milkshakesBgColor;
-}
-
-// ROUTE //
-
-.contacts-day {
-  font-weight: 500;
-  line-height: calc(22 / 12);
-}
-
-.contacts-margin-day {
-  margin-top: 8px;
-}
-
-.contacts-oclock {
-  font-weight: 500;
-  line-height: calc(22 / 12);
-
-  color: #ababab;
-}
-
-// ADDRESS //
-
-.contacts-address {
-  @extend %link;
-  font-weight: 500;
-  line-height: calc(19 / 12);
-
-  color: $darkTextColor;
-}
-
-// BUTTON //
-
-.contacts-btns {
-  display: block;
-  text-align: center;
-}
-
-.contacts-btn {
-  @extend %button;
-  background-color: $accentTextColor;
-  width: 196px;
-  margin: 0 42px;
-  $transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus {
-    color: #ffffff;
-    background-color: $hoverFocusBtnBgColor;
-    $transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #0a8817;
+    @media screen and (max-width: 767px) {
+      margin-top: 393px;
+    }
   }
 
-  &:hover {
-    border-color: $hoverFocusBtnBgColor;
-    background-color: $hoverFocusBtnBgColor;
-    $transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #0a8817;
+  ul.contacs-list {
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 69px;
   }
 
-  &:last-child {
-    margin-top: 16px;
-  }
-}
-
-.inherit {
-  @extend %button;
-  background-color: transparent;
-
-  &:focus {
-    color: #ffffff;
-    background-color: transparent;
-    $transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #0a8817;
+  .absolute-element {
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: -353;
+    }
   }
 
-  &:hover {
-    border-color: $hoverFocusBtnBgColor;
-    background-color: transparent;
-    $transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid #0a8817;
+
+  .contacs-type {
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
-}
 
-.btn-icon {
-  margin-left: 7px;
-  fill: $buttonTextColor;
-  $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .contacs-town-addres,
+  ul.contacs-days-time {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid $footerBorder;
+  }
 
-.contacts-btn:focus .btn-icon {
-  fill: #ffffff;
-  $transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .town {
+    margin-bottom: 8px;
+  }
+
+  .contacs-text {
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .contacs-addres {
+    line-height: 183%;
+    color: $milkshakesBgColor;
+  }
+
+  .contacs-time {
+    font-weight: 500;
+    line-height: 186%;
+    color: #ABABAB;
+  }
+
+  .contacs-addres-link {
+    @extend %link;
+    font-weight: 500;
+    line-height: 160%;
+    color: $darkTextColor;
+  }
+
+  .contacs-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contacs-buttons-item {
+    @media screen and (max-width:767px) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .contacs-button {
+    @extend %button;
+    padding: 12px auto;
+    width: 196px;
+    color: $buttonTextColor;
+    fill: $buttonTextColor;
+    transition: background-color $transition,
+      border-color $transition,
+      color $transition,
+      fill $transition;
+
+    &:hover {
+      border-color: $hoverFocusBtnBgColor;
+    }
+
+    &:focus {
+      border-color: $hoverFocusBtnBgColor;
+      color: #ffffff;
+      fill: #ffffff;
+    }
+  }
+
+    .first-button {
+      background-color: $defaultBtnBgColor;
+  
+      &:hover {
+        background-color: $hoverFocusBtnBgColor;
+      }
+  
+      &:focus {
+        background-color: $hoverFocusBtnBgColor;
+      }
+    }
+  
+    .second-button {
+      background-color: $mainBgColor;
+    }
 
 // Modal Location //
 
