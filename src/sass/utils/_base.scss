@@ -35,7 +35,8 @@ body {
     color: $darkTextColor;
 
     background-image: url(../images/body/backgroud_mobile@1x.jpg);
-    background-position: center;
+    // background-position: center;
+    background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
