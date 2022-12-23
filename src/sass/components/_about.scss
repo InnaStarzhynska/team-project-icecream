@@ -281,7 +281,7 @@ transition-timing-function:250ms;
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  z-index: 1500;
 
   transition: $transition;
 }
@@ -304,7 +304,7 @@ transition-timing-function:250ms;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 2000; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
