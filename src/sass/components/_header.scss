@@ -2,7 +2,7 @@
     background-color: $mainBgColor;
     @media screen and (max-width: 480px) {
         position: fixed;
-        z-index: 5;
+        z-index: 1005;
         width: 100%;
     }
 }
