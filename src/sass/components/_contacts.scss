@@ -1,16 +1,21 @@
 .contacts {
   padding-bottom: 60px;
-  background-color: $mainBgColor;
+  // background-color: $mainBgColor;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 393px;
-  }
+  background-image: linear-gradient(to bottom, transparent 25%, $mainBgColor 25%);
+
+  @media screen and (min-width:768px) {
+      background-image: linear-gradient(to bottom, transparent 45%, $mainBgColor 45%);
+    }
+  
+    @media screen and (min-width:1200px) {
+      background-image: linear-gradient(to bottom, transparent 20%, $mainBgColor 20%);
+    }
 }
 
 ul.contacs-list {
   position: relative;
   padding-bottom: 20px;
-  padding-top: 69px;
 
   @media screen and (min-width:768px) {
     display: flex;
@@ -22,13 +27,6 @@ ul.contacs-list {
       gap: 32px;
       padding-bottom: 60px;
     }
-}
-
-.absolute-element {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: -361px;
-  }
 }
 
 .contacs-list-item {
@@ -75,12 +73,6 @@ ul.contacs-list {
 }
 }
 
-  .absolute-element {
-    @media screen and (max-width: 767px) {
-      position: absolute;
-      top: -353;
-    }
-  }
 
   .contacs-town-addres,
   ul.contacs-days-time {
@@ -172,8 +164,16 @@ ul.contacs-list {
     font-weight: 500;
     line-height: 160%;
     color: $darkTextColor;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+        }
       @media screen and (min-width:768px) {
           font-size: 14px;
+
+          &:not(:last-child) {
+              margin-bottom: 4px;
+            }
         }
       
         @media screen and (min-width:1200px) {
