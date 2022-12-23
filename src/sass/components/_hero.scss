@@ -31,22 +31,52 @@
 
 .hero-container {
   position: relative;
+  padding-top: 38px;
   padding-bottom: 236px;
-  min-width: 320px;
-  background-image: url('../images/hero/dots_mobile.png');
-  background-repeat: no-repeat;
-  background-position: bottom 0px center;
 
+  background-image: url('../images/hero/dots@1xsm.png');
+  background-size: 320px 50px;
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 50%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/hero/dots@2xsm.png');
+    }
+  }
   @media screen and (min-width: 768px) {
+    padding-top: 4px;
     padding-bottom: 24px;
-    background-image: url('../images/hero/tablet@1x.png');
+    background-image: url('../images/hero/dots@1xmd.png');
+    background-size: 768px 68px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/hero/dots@2xmd.png');
+      }
+    }
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 33px;
     padding-bottom: 103px;
-    background-image: url('../images/hero/dots_1200.png');
+    background-image: url('../images/hero/dots@1xlg.png');
+    background-size: 1200px 384px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/hero/dots@2xlg.png');
+      }
+    }
   }
-}
+} 
+
 
 .hero-flex-box {
   display: flex;

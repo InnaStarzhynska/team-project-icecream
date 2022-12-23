@@ -1,16 +1,14 @@
 .contacts {
   padding-bottom: 60px;
-  // background-color: $mainBgColor;
-
-  background-image: linear-gradient(to bottom, transparent 25%, $mainBgColor 25%);
-
-  @media screen and (min-width:768px) {
-      background-image: linear-gradient(to bottom, transparent 45%, $mainBgColor 45%);
-    }
+  background-image: linear-gradient(to bottom, transparent 25%, $mainBgColor 25% );
   
-    @media screen and (min-width:1200px) {
-      background-image: linear-gradient(to bottom, transparent 20%, $mainBgColor 20%);
-    }
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to bottom, transparent 45%, $mainBgColor 45%);
+      }
+    
+      @media screen and (min-width:1200px) {
+        background-image: linear-gradient(to bottom, transparent 20%, $mainBgColor 20%);
+      }
 }
 
 ul.contacs-list {
@@ -168,6 +166,7 @@ ul.contacs-list {
     &:not(:last-child) {
         margin-bottom: 8px;
         }
+      
       @media screen and (min-width:768px) {
           font-size: 14px;
 
