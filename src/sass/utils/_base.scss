@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -49,7 +53,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
 
         background-image: url(../images/body/backgroud_desktop@1x.jpg);
 
