@@ -70,22 +70,28 @@
       <nav class="mobile-menu-site-nav">
         <ul class="mobile-menu-site-nav-list">
           <li class="mobile-menu-item">
-            <a href="#header" class="mobile-menu-link">Home</a>
+            <a href="#header" class="mobile-menu-link js-close-menu">Home</a>
           </li>
           <li class="mobile-menu-item">
-            <a href="#about" class="mobile-menu-link">How it’s made?</a>
+            <a href="#about" class="mobile-menu-link js-close-menu"
+              >How it’s made?</a
+            >
           </li>
           <li class="mobile-menu-item">
-            <a href="#products" class="mobile-menu-link">Our products</a>
+            <a href="#products" class="mobile-menu-link js-close-menu"
+              >Our products</a
+            >
           </li>
           <li class="mobile-menu-item">
-            <a href="#contacts" class="mobile-menu-link">Contact</a>
+            <a href="#contacts" class="mobile-menu-link js-close-menu"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
       <button
         type="button"
-        class="mobile-header-button js-open-modal"
+        class="mobile-header-button js-open-modal js-close-menu"
         data-modal="1"
       >
         Buy now
@@ -144,7 +150,7 @@
         name="name"
         class="modal-form-input"
         placeholder="Name"
-        pattern="[A-Za-z]{2,10}" 
+        pattern="[A-Za-z]{2,10}"
         title="Username must contain uppercase and lowercase letters, from 2 to 10 characters in length"
       />
     </label>
